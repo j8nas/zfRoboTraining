@@ -1,0 +1,608 @@
+﻿<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZFRobotQuiz</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">ZF-Robotik</a>
+					<p class="navbar-text navbar-right" hidden>0 Punkte</p>
+				</div>
+			</div>
+		</nav>
+
+	<div id="start_screen" class="jumbotron start_screen">
+			<h1>Willkommen zur ZF-Robotik</h1>
+			<hr></hr>
+			<h2>Grundlagen:</h2>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter1_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Rotationsmatrix</button></p></div>
+				<div class="col-md-3"><p><button class="chapter2_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Rechte Hand Regel</button></p></div>
+				<div class="col-md-3"><p><button class="chapter3_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Koordinatensystem</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter4_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">TCP und Ebenen</button></p></div>
+				<div class="col-md-3"><p><button class="chapter5_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Bausteine im GUI</button></p></div>
+				<div class="col-md-3"><p><button class="chapter6_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Gelenktypen</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter7_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kamera-Kalibrierung</button></p></div>
+				<div class="col-md-3"><p><button class="chapter8_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Singularität</button></p></div>
+				<div class="col-md-3"><p><button class="chapter9_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Asimov Gesetze</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter10_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Sicherheit</button></p></div>
+				<div class="col-md-3"><p><button class="chapter11_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">ISO und Norm</button></p></div>
+				<div class="col-md-3"><p><button class="chapter12_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Gelenkwinkel</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter13_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Polyscope</button></p></div>
+				<div class="col-md-3"><p><button class="chapter14_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Flansch</button></p></div>
+				<div class="col-md-3"><p><button class="chapter15_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">URCaps</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter16_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Input/Output</button></p></div>
+			</div>
+			<div class="row">
+				<hr></hr>
+				<div class="col-md-3"><p> <button class="startquiz btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Quiz</button></p></div>
+			</div>
+			<hr></hr>
+			<h2>Instandhaltung:</h2>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter17_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Austausch</button></p></div>
+				<div class="col-md-3"><p><button class="chapter18_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Ersatzteilbeschaffung</button></p></div>
+				<div class="col-md-3"><p><button class="chapter19_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Key-Wegpunkte</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter20_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Wartungsintervalle</button></p></div>
+				<div class="col-md-3"><p><button class="chapter21_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kommunikationsprotokolle</button></p></div>
+				<div class="col-md-3"><p><button class="chapter22_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">IMM-Programmierung</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter22_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">OEM Anschluss</button></p></div>
+				<div class="col-md-3"><p><button class="chapter23_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">ESD Verträglichkeit</button></p></div>
+				<div class="col-md-3"><p><button class="chapter24_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">System-Backup</button></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"><p><button class="chapter25_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Support-Log Reader </button></p></div>
+				<div class="col-md-3"><p><button class="chapter26_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">LED Indikatoren</button></p></div>
+			</div>
+			<br>
+			<hr></hr>
+    </div>
+
+    <div id="question" class="jumbotron" hidden>
+        <h2>Frage <span id="qno"></span></h2>
+        <p id="question_text">...?</p>
+        <div class="row">
+          <div class="col-md-6"><p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-block" role="button">A: <span id="answer_a">!</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-block" role="button">C: <span id="answer_c">.</span></button></p></div>
+        </div>
+		<div class="row">
+          <div class="col-md-6"><p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-block" role="button">B: <span id="answer_b">?</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-block" role="button">D: <span id="answer_d">;</span></button></p></div>
+        </div>
+		<div class="row">
+          <div class="col-md-10"></div>
+          <div class="col-md-2">
+            <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button"><span id="commit_text">Überprüfen</span></button></p>
+            <p><button id="continue_btn" class="btn btn-primary btn-lg btn-block" role="button" hidden><span id="commit_text" >Nächste Frage</span></button></p>
+          </div>
+        </div>
+    </div>
+
+	  <div id="chapter_1" class="jumbotron chapter_1" hidden>
+        <h1>Rotationsmatrix</h1>
+		<p>Die Rotation eines Körpers im Raum ist ein essentielles Thema für Ingenieure in jeglichen Bereichen. Auch auf Enzyklopedien gibt es einiges über dieses Thema heraus zu finden (<a href="https://de.wikipedia.org/wiki/Eulersche_Winkel">Euler</a>,<a href="https://de.wikipedia.org/wiki/Drehmatrix">Drehmatrix</a>).</br></p>
+        <p>Die wissenschaftliche Theorie, die man über dieses Thema nachlesen kann, ist grenzenlos. Aber um wirklich zu verstehen was passiert, braucht man eine visuelle Veranschaulichung, damit man seine Denkweise daran anpasst.</p></br>
+        <h2>XYZ-Konvention</h2>
+        <p>Die Rotationsmatrix besteht aus 3 einzelnen Matrizen, die jeweils für Z-Rotation, Y-Rotation und X-Rotation stehen.</p>
+        <image src="images/rotmat.png"></img>
+        <p>Multipliziert man diese Matrizen miteinander, ergibt sich die finale Rotationsmatrix.</p><br>
+		<image src="images/rotationsmatrix.png"></img>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+    </div>
+
+	<div id="chapter_2" class="jumbotron chapter_2" hidden>
+        <h1>Rechte Hand Regel</h1>
+        <p>Die rechte Hand ist, wie in vielen anderen Bereichen der Technik, auch hier ein gutes Werkzeug um Koordinatensysteme schnell zu veranschaulichen.<br>
+        Daumen       - X-Achse<br>Zeigefinger  - Y-Achse<br>Mittelfinger - Z-Achse<br></p><br>
+        <h1>Drehsinn</h1>
+        <p>Für den Drehsinn benutzt man auch die rechte Hand, genau wie in der Elektrotechnik.
+        Der Daumen zeigt in Richtung des Vektors und die Richtung der anderen Finger gibt die positive Drehrichtung vor.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+    </div>
+
+	<div id="chapter_3" class="jumbotron chapter_3" hidden>
+        <h1>Koordiantensystem</h1>
+        <p>In der Robotik gibt es einige Koordiantensysteme, die man berücksichtigen muss. Es gibt den Bezug zur Basis, zum TCP oder auch zu einer selbst definierten Ebene.<br>
+        Diese Abhängigkeiten sollte man für jeden Fahrbefehl festlegen, damit sich der Roboter nicht auf unerwünschte Weise bewegt.</p><br><br>
+		<p>Drehen Sie immer in der Reihenfolge: 1, 2 und dann 3.<br>
+		Mittels 4(x), 5(y) und 6(z) verschieben Sie den Ursprung global im Raum.<br>
+		Nach Verschieben/Verdrehen des Koordinatensystems, entfernen Sie den Haken bei "kos", um das Kardan-System einzublenden.<br><br>
+		Hier wird um die jeweilige Achse rotiert.
+		</p>
+		<object width="800px" height="600px" data="coordgame.html">
+		</object>
+		<br>Getestet und funktionstüchtig unter Google Chrome(version 81.3). Es muss ES6 aktiviert sein.
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+
+	<div id="chapter_4" class="jumbotron chapter_4" hidden>
+        <h1>TCP</h1>
+        <p>Der TCP (tool center point) stellt den vordersten Punkt des Roboterarms, den Flansch, dar.
+          Wenn ein Effektor montiert ist, muss der TCP anhand dessen kalibriert werden.
+		  Der TCP ist der Hauptreferenzpunkt des Roboters und anhand dessen, werden z.b. Wegpunkte gespeichert.<br>
+		  Bei Schweiswerkzeug ist dies der Aufsetzpunkt und bei Greifern ist es der Mittelpunkt der Verbindungslinie der Greiferbacken.<br><br>
+		<h1>Ebenen</h1>
+		  <p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
+		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
+		  Sicherheitsebenen stellen eine 'Barriere' dar, die der Roboter nicht durchstoßen soll. Dies kann man auf einige Arten festlegen.<br>
+		  •"Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
+		  •"Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
+		  •"Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
+		  •"Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br><br></p>  
+		  <img src="images/ebenen.png" height="700" width="1000"></img>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+
+	<div id="chapter_5" class="jumbotron chapter_5" hidden>
+        <h1>Bausteine im GUI</h1>
+        <h2>Unterprogramm-Baustein</h2>
+		<p>Erstellen eines neuen Unterprogramm muss in die oberste Programmebene.<br>
+		Aufrufbar an beliebiger Stelle im Roboterprogramm; nützlich für häufig gebrauchte Programmsequenzen.<br>
+		Dieser Abschnitt wird auch nur einmal durchlaufen.</p><br>
+		<h2>Thread-Baustein</h2>
+		<p>Parallellaufendes Programm; Startet mit Hauptprogramm (nicht mit der Vor-Start-Sequenz). <br>
+		nützlich um in eine Variable einen aktuellen Wert zu schreiben (z.B. Force/TCP Position).<br>
+		Am Ende vom Thread sync() (mittels Baustein „Script“) oder wait-Befehl einfügen.</p><br>
+		<h2>Event-Baustein</h2>
+		<p>Ähnlich wie Thread, startet jedoch erst, wenn die definierte Bedingung erfüllt ist.<br><br>
+	    <h2>If-Baustein</h2>
+		<p>Funktioniert mit der gleichen Logig wie das "if" bei jeder Programmiersprache.<br>
+		Else kann leer gelassen werden und es sind beliebig viele elseif-Blöcke einfügbar.<br></p>
+		<img src="images/if.png" height="200" width="400"></img><br><br>
+		<h2>Schleife-Baustein</h2>
+		<p>Um eine Schleife zu kreieren kann man die gängigen Befehle "for" und "while" benutzen.<br>
+		Je nach Bedingungen für diese Schleifen, kann man auch Endlosschleifen programmieren.<br></p>
+		<img src="images/schleife.png" height="200" width="400"></img><br><br>
+		<h2>Switch-Case</h2>
+		<p>Fälle (Cases) dürfen nur Integer-Werte sein<br></p>
+		<img src="images/switch case.png" height="400" width="200"></img><br><br>
+		<h2>Kraft-Baustein</h2>
+		<p>Hier fährt der Roboter auf Kollision, bis er auf eine gewisse Widerstandskraft trifft.
+		In dem Baustein kann man Richtung und Geschwindigkeit festlegen.<br>
+		Kaftfahrten sollte man mit einer Schleife mit eindeutiger Bedingung koppeln, damit der Roboter auch wieder auf gewünschte Weise aufhört oder dort stoppt, wie man es will<br>
+		Der Modus "Rahmen" wird empfohlen, da dieser angenehm zu konfigurieren ist.<br>
+		ACHTUNG: Kraftbefehle innerhalb einer Endlosschleife führen zu Problemen!</p>
+		<img src="images/kraft.png" height="700" width="1000"></img><br><br>
+		<h2>Skript-Baustein</h2>
+		<p>Für Fortgeschrittene Benutzer, ist dieser Baustein das wichtigste Tool, um den Roboter effizient zu betreiben.<br>
+		Programme lassen sich vorher planen, durchdenken und können am PC geschrieben werden, ohne, dass man alles auf dem Tablet des Roboters tippen muss.<br></p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+
+	<div id="chapter_6" class="jumbotron chapter_6" hidden>
+        <h1>Gelenkarten</h1>
+        <p>Gelenke verbinden die verschiedenen Armteile des Roboters und das typischerweise translatorisch (prismatic) oder rotatorisch (revolute). <br>
+		Es gibt noch Revolvergenke, welche auf eine besondere Art drehen, jedoch sind diese selten verbaut.<br>
+		Je nach dem wie man diese Gelenke miteinander verkettet, erreicht man unterschiedliche Freiheitsgrade in dem Roboterarm. <br>
+		Der Roboter kann bis zu 6 Freiheitsgraden haben.<br><br>
+		• Translatorisches Gelenk: erlaubt eine relative, lineare Bewegung zwischen zwei Armteilen.<br>
+		• Rotatorisches Gelenk: erlaubt eine relative, rotatorische Bewegung zwischen zwei Armteilen.</p><br><br>
+		<img src="images/gelenktypen.png"></img>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+
+	<div id="chapter_7" class="jumbotron chapter_7" hidden>
+        <h1>Kamera-Kalibrierung</h1>
+        <p>Um eine Kamera zu kalibrieren, schließt man diese mit Ethernet-Kabel an den PC oder einen Microcontroller.<br>
+		Nach der Verbindung mit den richtigen IPs und der Installation der dazugehörigen Software, kann die Kamera mittels Smartgrid kalibrieren.<br>
+		<image src="images/web_178125_Bild_3.jfif" height="650" width="900"></img><br><br>
+		Es wird ein Bezug zwischen Roboterkoordinaten und Kamerakoordinaten berechnet.<br>
+		Wenn die Kamera ein Objekt erkennt und dessen Koordinaten hat, werden diese in die Koordinaten des Roboters umgerechnet und der TCP kann sich durch einen Fahrbefehl dort hinbewegen.<br>
+		Weitere Themen der Kameratechnik werden schnell sehr komplex.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+
+	<div id="chapter_8" class="jumbotron chapter_8" hidden>
+        <h1>Singularität</h1>
+        <p>Das Wort "Singularität" hat viele Bedeutungen, doch in die Robotik steht es für ein Problem, welches  jeden Roboter betrifft.<br><br>
+		Die Bewegung des Roboterwerkzeuges per inverser Kinematik führt zu einigen Besonderheiten. Während sich aus einer bestimmten Stellung der Achsen eindeutig eine Position 
+		des Werkzeuges ergibt, ist die Stellung der Achsen für eine bestimmte Werkzeuglage nicht immer eindeutig.<br><br>
+		Das System ist rechnerisch mehrdeutig.<br><br>
+		Je nach Lage des Zielpunktes und der Mechanik des Roboters gibt es oft mehrere Achskonfigurationen, die zur gewünschten Werkzeugposition führen. 
+		Die Auswahl der geeignetsten Konfiguration ist Aufgabe des Programmierers. <br><br>
+		Die Steuerung muss dann sicherstellen, dass diese Konfiguration während der Bewegung möglichst lange beibehalten wird.
+		Der Wechsel zwischen zwei Konfigurationen kann sonst dazu führen, dass für eine minimale Werkzeugbewegung eine sehr große Bewegung des gesamten Roboters stattfindet. 
+		Diese unerwartete Bewegung kostet Zeit und ist oft nicht kollisionsfrei möglich.<br><br>
+		Bei manchen Roboterkinematiken (z. B. 6-achsiger Gelenkarmroboter) gibt es Raumpunkte, die zu sogenannten Singularitäten führen. <br>
+		Eine Singularität ist dadurch gekennzeichnet und erkennbar, dass zwei Achsen des Roboters kollinear (fluchtend) sind. <br><br></p>
+		<h2>Beispiele</h2>
+		<p>Eine typische Konfiguration mit Singularität ist die Überkopfstellung des Werkzeuges. Hier fluchten Achse 1 und Achse 6. Die Steuerung kann eine auszuführende 
+		Rotation um die Senkrechte nicht eindeutig Achse 1 oder Achse 6 zuordnen. <br><br>
+		Eine andere Konstellation ist beim Nulldurchgang der Achse 5 gegeben. <br>
+		Hier fluchten Achse 4 und Achse 6. Hier gibt es unendlich viele Achsstellungen, die zur gleichen Werkzeugstellung führen bzw. Bewegungsbahnen, 
+		bei denen mehrere Achsen mit unendlicher Geschwindigkeit gegeneinander bewegt werden müssten. <br><br>
+		Einige Steuerungen brechen das Programm sicherheitshalber beim Durchfahren eines solchen Punktes ab.<br><br>
+		Anbei ein Video, wechles die Problematik sehr gut veranschaulicht.</p>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/6Wmw4lUHlX8?start=10" frameborder="0" allow="accelerometer; 
+		encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_9" class="jumbotron chapter_9" hidden>
+        <h1>Die Asimov’schen Gesetze</h1>
+        <p><b>1.</b><br>Ein Roboter darf kein menschliches Wesen (wissentlich) verletzen oder durch Untätigkeit (wissentlich) zulassen, 
+		dass einem menschlichen Wesen Schaden zugefügt wird.<br><br>
+		<b>2.</b><br>Ein Roboter muss den ihm von einem Menschen gegebenen Befehlen gehorchen – es sei denn, ein solcher Befehl würde mit Regel eins kollidieren.<br><br>
+		<b>3.</b><br>Ein Roboter muss seine Existenz beschützen, solange dieser Schutz nicht mit Regel eins oder zwei kollidiert.<br><br>
+		Man beachte, dass diese Gesetze hierarchisch aufgebaut sind. Sie bilden den Hintergrund, in einem Science-Fiction-Film von 1950
+		und prägen seither die Auffassung, was und wie ein Roboter sein sollte. 
+		Die von Asimov beschriebenen Roboter sind in ihrem Verhalten und ihren Entscheidungen an diese Gesetze gebunden.<br><br>
+		Roboter im militärischen Bereich (automatische Waffensysteme, Smart Bombs, Drohnen, Kampfroboter) sind davon ausgenommen., da sie einen anderen
+		Zweck verfolgen.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_10" class="jumbotron chapter_10" hidden>
+        <h1>Sicherheit</h1>
+        <p>Sicherheit ist der wichtigste Punkt in der Industrie, der sehr viel Aufmerksamkeit bekommen muss.<br><br>
+		Grad im Umgang mit Maschinen und vorallem mit Cobots, die mit einem Benutzer interagieren sollen, ist dies ein großes Thema.<br>
+		Sicherheitsschuhe sind ein Muss. Normalerweise stehen die Cobots, auch mit ihrem Namen dafür, dass sie sehr menschenfreundlich sind,
+		doch kann jederzeit mal etwas umfallen, runterfallen oder eine ungewollte Bewegung passieren.<br><br>
+		Dazu sollten auch, wie immer in industrieller Umgebung, keine Stolperfallen in Roboternähe sein.<br><br>
+		Obwohl der Cobot mit Sensorik ausgestattet ist, die auf den Menschen aufpasst, sollte man ihm trotzdem mit Respekt gegenübertreten, 
+		da selbst die Safety-Thresholds ordentlich Schmerz versuchen können.<br></p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_11" class="jumbotron chapter_11" hidden>
+        <h1>ISO und Norm</h1>
+        <p>Wie schon in dem Kapitel Sicherheit beschreiben, gibt es hier nun die rechtliche Einordnung der Roboter.<br><br>
+		<b>ISO 15066</b><br>
+		<img src="images/iso15066.jpg"></img><br><br>
+		<b>DIN EN ISO 10218-2</b><br>
+		<img src="images/iso10218.jpg"></img><br>
+		<br>Diese Normen greifen ineinander und stellen beide fast das gleiche dar. Beide verdeutlichen die Wichtigkeit dieser Thematik.<br>
+		Wir benutzen ausschließlich kollaborative Roboter, welche den größt möglichen Schutz für den Benutzer bieten.
+		Somit ist eine lockere Arbeitsumgebung möglich, in der man mit dem Roboter zusammen im gleichen Bereich sein darf.<br></p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_12" class="jumbotron chapter_12" hidden>
+        <h1>Gelenkwinkel</h1>
+        <p>Jedes Gelenk in einem Roboter hat einen maximalen Drehwinkel, in dem es sich drehen kann. Schlägt der Roboter an diesem Limit an, stoppt er zum Eigenschutz sofort.<br>
+		Diese Extrempunkte sollte man bedenken wenn man spezielle Bahnplanungen anstellen will, dass es dem Roboter selber möglich ist, das Ziel zu erreichen.<br>
+		<br>Vor der Benutzung des Roboters sollte man einen kurzen Blick auf die Gelenkstellung werfen, damit man sicher gehen kann, dass man ordentlichen Spielraum hat.<br>
+		Da reicht ein kurzer Blick in die Move-Option. Dort werden die aktuellen Positionen aller Gelenke angezeigt.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_13" class="jumbotron chapter_13" hidden>
+        <h1>Polyscope</h1>
+        <p>
+		
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_14" class="jumbotron chapter_14" hidden>
+        <h1>Flansch</h1>
+        <p>Jeder Roboter hat einen Flansch, an den man Effektoren anbringen kann. Manche Roboter werden mit einem dazugehörigen Greifer gefertigt, 
+		doch diese sind nicht so vielseitig und modular einsetzbar, wie Roboter, die man mit einem beliebigen Effektor ausrüsten und betreiben kann.<br><br>
+		Im Folgenden werden die verschiedenen Flansche der Roboter gezeigt.</p><br>
+		<p>Universal Robot:<br><image src="images/flansche4.jpg" height="650" width="900"></image><br>
+		<br>Doosan:<br><image src="images/flansche3.jpg" height="650" width="900"></image><br>
+		<br>Kuka:<br><image src="images/flansche1.jpg" height="650" width="900"></image><br>
+		<br>Franka mit eigenem Greifer:<br><image src="images/flansche2.jpg" height="650" width="900"></image><br>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_15" class="jumbotron chapter_15" hidden>
+        <h1>URCaps</h1>
+        <p>URCaps sind wohl das stärkste Werkzeug der Universal Robots.
+		In einem URCap kann man alles programmieren, das man sich ausdenken kann. Dieses komplexe Tool bietet unendlich viele Möglichkeiten, 
+		Probleme zu vereinfachen oder sogar Bedienoberflächen für Geräte herzustellen.<br><br>
+		Universal Robots stellt kostenlos ein VirtualMachine-Image, mit einem LinuxOS, zur Verfügung, in dem eine IDE und die nötige SDK schon installiert sind.<br>
+		Man kann sofort anfangen zu coden, so weit man weiß, was man machen muss.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_16" class="jumbotron chapter_16" hidden>
+        <h1>Input/Output</h1>
+        <p>Damit der Roboter mit seiner Umwelt kommunizieren kann, hat er Eingänge und Ausgänge.<br>
+		Steuerbar sind somit Förderbänder, Greifer und viele andere Geräte.
+		<br>Durch Sensoren bekommt der Roboter Anweisungen von außen.<br>
+		<img src="images/inputoutput.jpg" width="900" height="600"></img><br><br>
+		Die Anschlüsse lassen sich recht intuitiv aufschlüsseln.<br>
+		24 Volt und 0 Volt, um jeweilige Geräte mit Spannung zu versorgen.<br>
+		Inputs und Outputs gibt es zu genüge als konfigurierbare, analoge und digitale Art.<br></p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_17" class="jumbotron chapter_17" hidden>
+        <h1>Komponententausch</h1>
+        <p>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_18" class="jumbotron chapter_18" hidden>
+        <h1>Ersatzteilbeschaffung</h1>
+        <p>Teilenummer des zu bestellenden Teils auslesen.<br>
+		Absichern, dass man die richtigen Teilenummern ausgelesen hat, von allen Teilen, die man braucht.<br>
+		Die Menge der jeweiligen Teile abklären.<br>
+		Per Teilenummer und mit der jeweiligen Menge die Bestellung abgeben.<br><br>
+		Den Katalog als Referenz benutzen!</p>
+		<object width="750px" height="900px" data="doc/ServiceManual_EN.pdf"></object>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_19" class="jumbotron chapter_19" hidden>
+        <h1>Key-Wegpunkte</h1>
+        <p>Key-Wegpunkte werden benutzt, wenn man ein Programm von einem unkalibrierten Roboter auf einen anderen Roboter lädt.
+		Diese Methode kann auch angewendet werden, um Programme weiterhin funktionieren zu lassen, obwohl z.B. ein Gelenk ersetzt wurde.<br><br>
+		Unterstützt werden hierbei folgende Punkte nicht:<br>
+		• Andere Wegpunktarten außer feste Wegpunkte<br>
+		• Bewegungskommandos mit Gelenkwinkeln als Angabe<br><br>
+		Falls diese Probleme zutreffen, muss man diese manuell korrigieren, nachdem der Key-Wegpunkt Prozess abgeschlossen ist.</p> <br><br>
+		<h2>Automatische Programm Korrektur</h2>
+		<p>1.	Lange den Run Button drücken, um den Experten Modus zu aktivieren.<br>
+		2.	Passwort eingeben und OK drücken<br>
+		3.	Auf der linken Seite Kalibrieren/Calibration auswählen und den Punkt „Programm Korrektur mit Key-Wegpunkten“ wählen<br>
+		4.	Danach den Experten Modus verlassen<br>
+		5.	Danach in das Hamburger Menü und Programmkorrektur wählen<br>
+		6.	Passwort eingeben und OK drücken</p><br>
+		<h2>Wegpunkte neu definieren</h2>
+		<p>7.	Lade das gewünschte Programm<br>
+		8.	Wähle einen der Key-Wegpunkte im Programm<br>
+		Falls Wegpunkte nicht richtig übernommen wurden, sind diese Gelb und müssen neu geteached werden<br>
+		9.	Wegpunkte neu setzen<br>
+		10.	Den Roboter zu der Position fahren und den neuen Wegpunkt festlegen<br><br>
+		Den CTP (abhängiger TCP) richtig wählen, damit der Offset für die Punkte richtig ist. <br>
+		Gute Punkte für dieses Vorgehen:<br>
+		• Den TCP, wo der Robot ein Objekt aufhebt<br>
+		• Die letzte Position, wo das Objekt abgelegt wird<br><br>
+		11.	Drücke auf CTP ändern und bestätigen<br>
+		12.	Mit jedem gelb markierten Wegpunkt wiederholen (Schritt 8-12)<br><br>
+		Wegpunkte von mehreren Programmen<br>
+		Man kann einige Key-Wegpunkte von mehreren Programmen hinzufügen, in dem man noch mehr Programme hinzufügt und alle mit den Schritten 7-12 neu definiert.<br>
+		13.	Wenn Key-Wegpunkte über mehrere Programme verteilt sind: Haupt-Node auswählen im Programm-Baum, „lade Programm“ auswählen und wieder bei Schritt 7 beginnen.<br><br>
+		</p><h2>Handhabung von Key-Wegpunkten<h2>
+		<p>Die Key-Wegpunkte sind gruppiert und jeder bezieht sich auf ein Quell-Programm.<br>
+		• Man kann eine Korrektur-Node als Übersicht öffnen<br>
+		• Man kann einen Wegpunkt auswählen, oder eine Wegpunktgruppe und diese löschen</p><br>
+		<h2>Programmkorrektur<h2>
+		<p>Sobald alle Key-Wegpunkte neu definiert sind, versucht Polyscope die Korrektur des Programms im Modus „Programmkorrektur“.<br><br>
+		14.	Lade Programm und dort das zu korrigierende Programm auswählen<br>
+		15.	Wenn die Wegpunkte erscheinen, „Korrigiere Wegpunkte“ wählen<br>
+		16.	Sobald die Korrektur fertig ist, erscheint ein Fenster<br>
+		17.	Falls es fehlschlägt, die Key-Wegpunkte und die Genauigkeit überprüfen<br>
+		Mehr Genauigkeit wird mittels mehreren Wegpunkten erreicht.<br>
+		18.	Nach der Korrektur das Programm mittels langsamen Testlauf abfahren<br>
+		19.	Wenn alles richtig angefahren wird, speichern des Programms!<br>
+		20.	Um andere Programme zu korrigieren, wieder bei Schritt 14 anfangen</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_20" class="jumbotron chapter_20" hidden>
+        <h1>Wartungsintervalle</h1>
+        <p>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_21" class="jumbotron chapter_21" hidden>
+        <h1>IMM-Programmierung</h1>
+        <p>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_22" class="jumbotron chapter_22" hidden>
+        <h1>OEM Anschluss</h1>
+        <p>Bevor an diesen Komponenten geschraubt wird, muss der Roboter heruntergefahren sein und vom Strom gekappt sein.
+		Die Universal Robots können mit Gleichstrom und Wechselstrom betrieben werden.<br><br>
+		OEM AC und DC Kontroll Box<br>
+		1. Gehäuse öffnen<br>
+		2. Entfernen der Hauptstromversorgung<br>
+		<img src="images/oem1.png" ></img><br>
+		3. Das Roboterkabel entfernen (Achtung: Gehäuse kann scharfkantig sein!)<br>
+		<img src="images/oem2.png" ></img><br>
+		4. Die OEM Box auf einen Tisch stellen für bessere Arbeitshaltung<br>
+		5. Die 4 Schrauben auf der Oberseite entfernen<br>
+		<img src="images/oem3.png" ></img><br>
+		6. Die Platte der Oberseite entfernen<br>
+		<img src="images/oem4.png" ></img><br>
+		7. Den Power-Stecker entfernen (Hierzu das Bild beachten)<br>
+		<img src="images/oem5.png" ></img>
+		<img src="images/oem6.png" ></img><br>
+		8. Entfernen aller Verbindungen auf der Kontrollplatte<br>
+		9. Box auf die Seite legen und die Schrauben lösen<br>
+		<img src="images/oem7.png" ></img><br>
+		10. Nun die losgelöste Platte herausziehen<br>
+		<img src="images/oem8.png" ></img><br>
+		11. Es gibt 2 Möglichkeiten<br></p>
+		<p style="text-indent:25px">a. Stromversorgung und/oder Kontrollbrett entfernen</p>
+		<p style="text-indent:25px">b. Lüfter und/oder Stromverbraucher entfernen</p><br>
+		<p>Für den Zusammenbau, die Schritte rückwärts durchlaufen.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_23" class="jumbotron chapter_23" hidden>
+        <h1>ESD Verträglichkeit</h1>
+        <p>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_24" class="jumbotron chapter_24" hidden>
+        <h1>System-Backup</h1>
+        <p>Ein Backup macht man mit der Funktion namens „Support File“. (polyscope 5.8 oder höher)<br>
+		Einen USB-Stick mit >4GB nötig, da das Backup recht groß sein kann.<br>
+		Die Funktion findet man wie auf dem Bild abgebildet.<br>
+		--> LOG --> Support file<br>
+		<image src="images/backup_supportfile.png"></image><br>
+		<br>Folgendes Fenster wird erscheinen, welches mit "weiter"/"continue" bestätigt wird.<br>
+		<image src="images/backup_popup.png"></image><br><br>
+		ALTERNATIVE:<br>Magic Files ist eine gute Alternative die versionübergreifend funktioniert.<br><br>
+		1. Lade Magic Files von UR Internetseite runter und speichere es in dem Root-Ordner.
+		Wenn mehr al seine Datei da sein sollten, laufen diese gerade simultan. Für jede Datei kommt eine Warnung. 
+		USB Stick erst abziehen, wenn alles fertig geladen ist. Es warden viele Ordner kreiert 
+		welche durchnummeriert sind. (e.g., 201855xxxx_0, 201855xxxx_1). <br>
+		2. Stecke den USB Stick in die Schnittstelle an dem Teach-Tablet.<br>
+		3. Ein rotes ! USB ! -Zeichen erscheint auf dem Bildschirm. USB Stick nicht verändern!<br>
+		4. Warten auf grünes USB-Zeichen. Wenn mehrere Magic Files entstehen, Step 3 nochmals machen. Große Daten (Logs,..) 
+		können bis zu 2 Minuten brauchen zum runterladen. <br>
+		5. Nach der letzten Magic Datei, kann der USB Stick entfernt werden.</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_25" class="jumbotron chapter_25" hidden>
+        <h1>Support-Log Reader</h1>
+        <p>Log-Daten von UR kann man mit dem Support Log Reader auslesen.<br>
+		Den findet man unter www.universal-robots.com/support.<br>
+		Das Programm ist folgender Maßen aufgebaut und zu lesen.<br><br>
+		1. Filterauswahl<br>
+		2. Tool bar; Lade Log Dateien, Export Errorcodes, Sprache ändern Textsuche / Fehlersuche<br>
+		4. Log Start Info Anzeige; Wird bei jedem Roboter Start erstellt. <br>
+		5. Text hervorgehoben bei Klick. Gibt mehr Info. <br>
+		6. PolyScope Zeit <br>
+		7. Anzeige von Infos aus ”safety, PolyScope, etc.” <br>
+		8. Nachricht; zeigt Text und Fehlercode an<br>
+		9. Log Einträge gesamt<br>
+		10. Einklappen oder Ausklappen der Infozeile (Punkt 4) <br><br>
+		<image src="images/support_log.png"></image><br><br>
+		Errorcodes sind bis C271 Roboter Generationen übergreifend.<br>
+		PSU = Power Supply<br>
+		PC = Controller<br><br>
+		Errorcodes in UR Service Manual Seite 86 - 136
+		<object width="750px" height="900px" data="doc/ServiceManual.pdf"></object>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_26" class="jumbotron chapter_26" hidden>
+        <h1>LED Indikatoren</h1>
+        <p>Die angezeigten LEDs sind “power“ LEDs. Sie sind wenn dann „an“ oder „aus“.<br>
+		Grün -> power an<br>Keine Farbe -> power aus<br>
+		<image src="images/led_1.png"></image><br><br>
+		Die folgenden LEDs zeigen die Kommunikation.<br>
+		Sie flackern in verschiedenen Geschwindigkeiten.<br><br>
+		Safety A / Safety B<br>
+		Grün schnell -> Bootloader<br>
+		Grün langsam -> normale Kommunikation<br>
+		Rot permanent -> Error!<br><br>
+		FPGA<br>
+		Grün permanent -> normale Kommunikation<br>
+		Rot permanent -> normale Kommunikation<br>
+		Grün langsam -> keine kommunikation!<br>
+		<image src="images/led_2.png"></image><br>
+		<br>Sicherung:<br>
+		Es wird eine 10A schnelle mini Klingen-Sicherung benutzt. Es soll niemals eine andere Sicherung benutzt werden. <br>
+		Sicherungsdaten:<br>
+		Unterbrechung -> 1000A @ 32VDC  ;  Volt -> 32 VDC<br>
+		Komponententemperatur -> -40° bis 125° Celsius<br>
+			Systemtemperatur -> -40° bis 105° Celsius<br>
+		Terminals -> Silber mit Zinklegierung;  Gehäuse -> PA66<br>
+		Konform mit -> SAE J2077, ISO 8820-3<br>
+		UL 248 Spezial Zweck Sicherung</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	<div id="chapter_27" class="jumbotron chapter_27" hidden>
+        <h1>Kommunikationsprotokolle</h1>
+        <p>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>
+	
+	
+    <div id="over" class="jumbotron quiz_end" hidden>
+        <h1>Das Quiz ist vorbei.</h1>
+        <p>Anzahl der richtigen Antworten: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
+        <p><button class="restart btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+    </div>
+  </div>
+
+  <center>
+  <img src="images/robot.png" width=“260“ height=“260“ alt="robot"></img>
+  </center>
+
+   	<!-- jQuery ein muss für bootstrapper java zeug -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- alle addons hier rein -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/script.js"></script>
+	<!-- quarantine sucks -->
+</body>
+</html>
