@@ -62,7 +62,7 @@
 			<hr></hr>
 			<h2>Instandhaltung:</h2>
 			<div class="row">
-				<div class="col-md-3"><p><button class="chapter17_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Austausch</button></p></div>
+				<div class="col-md-3"><p><button class="chapter17_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Komponentenaustausch</button></p></div>
 				<div class="col-md-3"><p><button class="chapter18_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Ersatzteilbeschaffung</button></p></div>
 				<div class="col-md-3"><p><button class="chapter19_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Key-Wegpunkte</button></p></div>
 			</div>
@@ -370,8 +370,111 @@
 	
 	<div id="chapter_17" class="jumbotron chapter_17" hidden>
         <h1>Komponententausch</h1>
-        <p>
-		</p>
+        <p>Vor dem Austausch:<br>
+		Sicher gehen, dass alle Sicherheitseingänge und Ausgänge richtig angeschlossen sind.<br>
+		Teste alle Verbindungen der Sicherheitseingänge und Ausgänge, und auch weitere Geräte, die mit dem Roboter verbunden sind, auf Funktionalität.<br> 
+		Die Folgenden Tests müssen durchgeführt werden, bevor etwas an dem Roboter verändert/modifiziert wird.<br>
+		-	Teste die Not-Aus Taste. Überprüfe ob der Roboter anhält und die Bremsen aktiv sind.<br>
+		-	Teste den SicherheitsSchutz Eingang, ob er den Roboter anhält. Wenn ein SicherheitsSchutz zugreift, überprüfen der Nötigkeit der Wiedereinschaltung.<br>
+		-	Teste die Sicherheitsbegrenzungen, um sicher zu gehen, dass in den Reduzierten Modus und zurückgeschaltet werden kann.<br>
+		-	Teste die Operations Modus Schalter, falls vorhanden, dass der Modus umgeschaltet werden kann.<br>
+		-	Teste, dass der System Not Stop Ausgang das ganze Sytem in den Sicherheitsstatus versetzt.<br>
+		-	Teste, ob das System die Veränderungen von Roboterbewegung Ausgängen, Roboterstop Ausgang, Reduzierter Modus oder „nicht reduzierter“ Modus Ausgang realisiert.<br>
+
+		<br>Roboterarm<br>
+ 
+		Bewegung ohne Fahrstrom<br>
+		In dem Fall eines Not-Stopps, wenn die Roboterversorgung unmöglich oder unerwünscht ist, kann man den gezwungenen „back-drive“ Modus benutzen oder kontaktiert Universal Robots direkt als letzte Möglichkeit.
+		Um den „back-drive“ zu erzwingen, muss man an dem Roboterarm ziehen/drücken, um das Gelenk zu bewegen. Jede Gelenkbremse hat eine Reibungskupplung, welche die Bewegung ermöglicht, wenn hohes Drehmoment erzwungen wird.
+		-	Manuelle Bewegung des Roboterarms ist nur im Notfall zu benutzen.<br>
+		-	Die Bremsen in den Gelenken sind nicht dafür ausgelegt, manuell deaktiviert zu werden. Der Versuch, 
+		dies zu machen, könnte Schaden an dem Gelenk verursachen.<br>
+		-	Die erzwungene Bewegung sollte nicht unnötig überstrapaziert werden. Nicht über 160° bewegen, sonst muss der Roboter neu kalibriert werden.<br><br>
+
+		Generelle Anweisung: Gelenkseparierung<br>
+		Hinweis auf ESD!<br>
+		Den Roboter vom Strom kappen.<br>
+		Die Schritte davor beachten.<br>
+		Zerlegen:<br>
+		1.	Überprüfung, ob das richtige Werkzeug da ist<br>
+				a.	Service Werkzeug mit Drehmomentschlüssel, ESD Armband, …<br>
+				b.	Wenn der Roboterarm zerlegt wird: neuen Flachring, Nutzring, M3 und M4 Werkzeug, vorgefettete Schrauben, Loctite<br>
+		2.	Bewege den Roboter in eine angebrachte Position zum auseinandernehmen.<br>
+		3.	Schalte die Kontrolbox aus und kappe die Stromzufuhr<br>
+		4.	Falls nötig, den Roboter von seiner Basis losschrauben für besseren Zugang<br>
+		5.	Schrauben auf den Abdeckungen lösen<br>
+		6.	Danach eine Schraube wieder in den Überstand schrauben und das Armband damit verbinden.<br>
+		7.	Vorsichtig die Kabelverbindung lösen, ohne die Platine zu biegen.<br>
+ 
+		PDF seite 29<br><br>
+
+
+		Strom und Kommunikationsverbindungen an dem Gelenk<br>
+		Vorsichtig diesen Stecker lösen.<br>
+  
+		Dieser Stecker hat ein Widerhaken. Wie auf dem Bild greifen und vorsichtig ziehen.<br>
+ 
+		Dieser Stecker kann gelöst werden, indem man vorsichtig am Kabel zieht.<br>
+ 
+		Positionen dieser Stecker:<br>
+   
+		Schraubverbindungen<br>
+		Folgende Sektion beschreibt wie man die Gelenke mit Schraubverbindung zerlegt und wieder zusammenbaut.<br><br>
+ 
+		Zerlegen der Schraubverbindung<br>
+		1.	Lösen der Schrauben auf der blauen Abdeckung, blaue Abdeckung abnehmen<br>
+		2.	Vorsichtig die Stromkabel und das Kommunikationskabel lösen<br>
+		3.	Vorsichtig den Flachring vom Gelenk wegschieben<br>
+		4.	Entfernen des Teflon-Rings<br>
+ 
+		5.	Zuerst die Kontersenkschrauben(a) lösen, danach die anderen(b). Das Gelenk könnte abfallen, wenn es nicht dementsprechend liegt/befestigt ist.<br>
+ 
+		6.	Das Gelenk ist nun lose und kann abgenommen werden. Auf die Kabel achten!<br><br>
+ 
+		Verbinden von Schraubverbindung:<br>
+		Funktioniert wie die Zerlegung rückwärts, jedoch gibt es ein paar Dinge auf die man achten muss.<br>
+		Alte Loctiterückstände entfernen. Die Schrauben sauber machen und wieder Loctite 243 auftagen, vor dem Zusammenbau.<br>
+			Immer neuen schwarzen flexiblen Flachring benutzen, um die IP-Klassifikation aufrecht zu halten.<br>
+		Den Nutzring ersetzen, wenn er abgenutzt oder kaputt ist.<br>
+		1.	Die Gelenke, wie auf dem Bild gezeigt, vorsichtig zusammenfügen. Die richtige Position ist wichtig.<br>
+ 
+		2.	Zuerst die Senkkopfschrauben eindrehen, wie im Bild. Nicht das vorgegebene Drehmoment überschreiten.<br>
+ 
+		3.	Nun die anderen Schrauben anbringen, wie in dem Bild gezeigt. Nicht das vorgegebne Drehmoment überschreiten.<br><br>
+
+		Zwingen Verbindung<br>
+		Folgende Gelenke sind mit einer Zwingenverbindung ausgestattet.<br>
+ 
+		Zerlegen von Zwingenverbindung<br>
+		1.	Schrauben lösen an den blauen Deckel und den blauen Deckel abnehmen.<br>
+		2.	Vorsichtig die Stromkabel und das Kommunikationskabel lösen.<br>
+		3.	Den Flachring von dem Gelenk lösen.<br>
+ 
+			4.	Löse die zwei Schrauben an der Zwinge. Das Gelenk kann abfallen, wenn es nicht richtig liegt.<br>
+ 
+		5.	Die Zwinge von beiden Seiten abziehen. <br>
+ 
+		6.	Das Gelenk ist nun lose und kann entfernt werden. Vorsicht auf die Kabel innen.<br><br>
+ 
+		Verbinden einer Zwingenverbindung:<br>
+		-	Immer den Flachring/Dichtring mit einem neuen ersetzen, damit die IP-Klassifikation erhalten bleibt.<br>
+		-	Ersetzen des Schaustoffs an der Zwinge, falls kaputt, damit die IP-Klassifikation erhalten bleibt.<br>
+		-	Ersetzen des Nutzrings, wenn dieser stark abgenutzt oder kaputt ist.<br>
+
+		-	Die Punkte müssen übereinstimmen, damit die Verbindung richtig ist.<br>
+		-	Gelenke sollten in einer vertikalen Position verbunden werden.<br>
+		-	Sicher gehen, dass die Schrauben in die richtige Zwinge eingeführt werden.<br>
+		Nur die Zwinge nochmal benutzen mit dem runden Marker.<br>
+ 
+		-	Wenn die Zwingen verschraubt werden, muss folgende Reihenfolge eingehalten werden, und auf das zulässige Drehmoment geachtet werden:<br>
+		1.	Anziehen auf einer Seite, bis der Spalt 1mm bis 1.5mm groß ist.<br>
+		2.	Anziehen der anderen Seite mit 5Nm.<br>
+		3.	Anziehen auch der ersten Seite mit 5Nm<br>
+		4.	Sichergehen, dass der Spalt auf beiden Seiten gleich groß ist. <br><br>
+ 
+		Werkzeug Flansch:<br>
+		Werkzeugflansch ist eine Schraubverbindung und wird wie ein Gelenk mit Schraubverbindung auseinandergenommen.<br>
+		Strom und Kommunikationskabel sind in einem Anschluss zusammen.</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
