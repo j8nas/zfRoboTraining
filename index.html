@@ -536,7 +536,7 @@
 		12.	Mit jedem gelb markierten Wegpunkt wiederholen (Schritt 8-12)<br>
 		<img src="images/key10.png" ></img><br><br>
 		<h2>Wegpunkte von mehreren Programmen</h2>
-		<p>Man kann einige Key-Wegpunkte von mehreren Programmen hinzufügen, in dem man noch mehr Programme hinzufügt und alle mit den Schritten 7-12 neu definiert.<br>
+		<p>Man kann einige Key-Wegpunkte von mehreren Programmen hinzufügen, in dem man noch mehr Programme hinzufügt und alle mit den Schritten 7-12 neu definiert.<br><br>
 		13.	Wenn Key-Wegpunkte über mehrere Programme verteilt sind: Haupt-Node auswählen im Programm-Baum, „lade Programm“ auswählen und wieder bei Schritt 7 beginnen.<br>
 		</p><img src="images/key11.png" ></img><br>
 		<img src="images/key12.png" ></img><br>
@@ -773,6 +773,7 @@
 		Hier werden Ports auf dem Robotercontroller für "in" und "out" geöffnet. Darüber sendet man dann
 		ein Triggersignal an das gewünschte Gerät. Dies sollte dann den Befehl ausführen und eine Bestätigung zurücksenden,
 		ob es funktioniert hat oder einen Fehler geworfen hat.<br>
+		Auf diese Art wird der Roboter zum "Server".<br>
 		Auf dem Roboter wird hierfür ein Skript-Baustein benutzt mit folgenden Zeilen:<br>
 		<code>socket_1 = socket_open(IP, PORT, socketname = s_out)<br>
 		socket_2 = socket_open(IP, PORT, socketname = s_in)<br>
@@ -783,7 +784,7 @@
 		
 		<br><b>3. URCaps:</b><br>
 		Viele Geräte haben ein eigenes URCap, welches die komplette Bedienung erleichtert. 
-		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurecht gelegt ist.
+		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurechtgelegt ist.
 		Wenn ein URCaps vorliegt, unbedingt für einen reibungslosen Aufbau und Anschluss benutzen.<br>
 		<br><b>4. IO-Link:</b><br>
 		Dies ist die Anbindungsstelle für intelligente Sensoren und Aktoren an ein Automatisierungssystem. 
