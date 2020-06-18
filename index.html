@@ -157,10 +157,10 @@
 		  <p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
 		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
 		  Sicherheitsebenen stellen eine 'Barriere' dar, die der Roboter nicht durchstoßen soll. Dies kann man auf einige Arten festlegen.<br>
-		  •"Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
-		  •"Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
-		  •"Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
-		  •"Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br><br></p>  
+		  • "Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
+		  • "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
+		  • "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
+		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br><br></p>  
 		  <img src="images/ebenen.png" height="700" width="1000"></img>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -376,39 +376,39 @@
         <p><b>Vor dem Austausch:</b><br>
 		Sicher gehen, dass alle Sicherheitseingänge und Ausgänge richtig angeschlossen sind.<br>
 		Teste alle Verbindungen der Sicherheitseingänge und Ausgänge, und auch weitere Geräte, die mit dem Roboter verbunden sind, auf Funktionalität.<br> 
-		Die Folgenden Tests müssen durchgeführt werden, bevor etwas an dem Roboter verändert/modifiziert wird.<br>
-		-	Teste die Not-Aus Taste. Überprüfe ob der Roboter anhält und die Bremsen aktiv sind.<br>
-		-	Teste den SicherheitsSchutz Eingang, ob er den Roboter anhält. Wenn ein SicherheitsSchutz zugreift, überprüfen der Nötigkeit der Wiedereinschaltung.<br>
-		-	Teste die Sicherheitsbegrenzungen, um sicher zu gehen, dass in den Reduzierten Modus und zurückgeschaltet werden kann.<br>
-		-	Teste die Operations Modus Schalter, falls vorhanden, dass der Modus umgeschaltet werden kann.<br>
-		-	Teste, dass der System Not Stop Ausgang das ganze Sytem in den Sicherheitsstatus versetzt.<br>
-		-	Teste, ob das System die Veränderungen von Roboterbewegung Ausgängen, Roboterstop Ausgang, Reduzierter Modus oder „nicht reduzierter“ Modus Ausgang realisiert.<br>
+		Die Folgenden Tests müssen durchgeführt werden, bevor etwas an dem Roboter verändert/modifiziert wird.<br><br>
+		• Teste die Not-Aus Taste. Überprüfe ob der Roboter anhält und die Bremsen aktiv sind.<br>
+		• Teste den SicherheitsSchutz Eingang, ob er den Roboter anhält. Wenn ein SicherheitsSchutz zugreift, überprüfen der Nötigkeit der Wiedereinschaltung.<br>
+		• Teste die Sicherheitsbegrenzungen, um sicher zu gehen, dass in den Reduzierten Modus und zurückgeschaltet werden kann.<br>
+		• Teste die Operations Modus Schalter, falls vorhanden, dass der Modus umgeschaltet werden kann.<br>
+		• Teste, dass der System-Not-Stop Ausgang das ganze Sytem in den Sicherheitsstatus versetzt.<br>
+		• Teste, ob das System die Veränderungen von Roboterbewegung Ausgängen, Roboterstop Ausgang, Reduzierter Modus oder „nicht reduzierter“ Modus Ausgang realisiert.<br>
 		<br><b>Roboterarm</b><br>
 		<img src="images/austausch1.png" ></img><br>
 		<img src="images/austausch2.png" ></img><br>
 		<br><b>Bewegung ohne Fahrstrom</b><br>
 		In dem Fall eines Not-Stopps, wenn die Roboterversorgung unmöglich oder unerwünscht ist, kann man den gezwungenen „back-drive“ Modus benutzen oder kontaktiert Universal Robots direkt als letzte Möglichkeit.
-		Um den „back-drive“ zu erzwingen, muss man an dem Roboterarm ziehen/drücken, um das Gelenk zu bewegen. Jede Gelenkbremse hat eine Reibungskupplung, welche die Bewegung ermöglicht, wenn hohes Drehmoment erzwungen wird.
-		-	Manuelle Bewegung des Roboterarms ist nur im Notfall zu benutzen.<br>
-		-	Die Bremsen in den Gelenken sind nicht dafür ausgelegt, manuell deaktiviert zu werden. Der Versuch, 
+		Um den „back-drive“ zu erzwingen, muss man an dem Roboterarm ziehen/drücken, um das Gelenk zu bewegen. Jede Gelenkbremse hat eine Reibungskupplung, welche die Bewegung ermöglicht, wenn hohes Drehmoment erzwungen wird.<br>
+		• Manuelle Bewegung des Roboterarms ist nur im Notfall zu benutzen.<br>
+		• Die Bremsen in den Gelenken sind nicht dafür ausgelegt, manuell deaktiviert zu werden. Der Versuch, 
 		dies zu machen, könnte Schaden an dem Gelenk verursachen.<br>
-		-	Die erzwungene Bewegung sollte nicht unnötig überstrapaziert werden. Nicht über 160° bewegen, sonst muss der Roboter neu kalibriert werden.<br><br>
+		• Die erzwungene Bewegung sollte nicht unnötig überstrapaziert werden. Nicht über 160° bewegen, sonst muss der Roboter neu kalibriert werden.<br><br>
 		Generelle Anweisung: Gelenkseparierung<br>
 		Hinweis auf ESD!<br>Den Roboter vom Strom kappen.<br>
 		Die Schritte davor beachten.<br><br>
-		<b>Zerlegen:</b><br>1.	Überprüfung, ob das richtige Werkzeug da ist<br>
-		a.	Service Werkzeug mit Drehmomentschlüssel, ESD Armband, …<br>
-		b.	Wenn der Roboterarm zerlegt wird: neuen Flachring, Nutzring, M3 und M4 Werkzeug, vorgefettete Schrauben, Loctite<br>
-		2.	Bewege den Roboter in eine angebrachte Position zum auseinandernehmen.<br>
-		3.	Schalte die Kontrolbox aus und kappe die Stromzufuhr<br>
-		4.	Falls nötig, den Roboter von seiner Basis losschrauben für besseren Zugang<br>
-		5.	Schrauben auf den Abdeckungen lösen<br>
+		<b>Zerlegen:</b>
+		<br>1.	Überprüfung, ob das richtige Werkzeug da ist<br>
+		a. Service Werkzeug mit Drehmomentschlüssel, ESD Armband, …<br>
+		b. Wenn der Roboterarm zerlegt wird: neuen Flachring, Nutzring, M3 und M4 Werkzeug, vorgefettete Schrauben, Loctite<br>
+		2. Bewege den Roboter in eine angebrachte Position zum auseinandernehmen.<br>
+		3. Schalte die Kontrolbox aus und kappe die Stromzufuhr<br>
+		4. Falls nötig, den Roboter von seiner Basis losschrauben für besseren Zugang<br>
+		5. Schrauben auf den Abdeckungen lösen<br>
 		<img src="images/austausch3.png" ></img><br>
-		6.	Danach eine Schraube wieder in den Überstand schrauben und das Armband damit verbinden.<br>
+		6. Danach eine Schraube wieder in den Überstand schrauben und das Armband damit verbinden.<br>
 		<img src="images/austausch4.png" ></img><br>
-		7.	Vorsichtig die Kabelverbindung lösen, ohne die Platine zu biegen.<br>
-		<img src="images/austausch5.png" ></img><br>
-		PDF seite 29<br><br>
+		7. Vorsichtig die Kabelverbindung lösen, ohne die Platine zu biegen.<br>
+		<img src="images/austausch5.png" ></img><br><br>
 		<b>Strom und Kommunikationsverbindungen an dem Gelenk</b><br>
 		Vorsichtig diesen Stecker lösen.<br>
 		<img src="images/austausch6.png" ></img><br>
@@ -424,59 +424,61 @@
 		Folgende Sektion beschreibt wie man die Gelenke mit Schraubverbindung zerlegt und wieder zusammenbaut.<br>
 		<img src="images/austausch12.png" ></img><br>
 		<br><b>Zerlegen der Schraubverbindung</b><br>
-		1.	Lösen der Schrauben auf der blauen Abdeckung, blaue Abdeckung abnehmen<br>
-		2.	Vorsichtig die Stromkabel und das Kommunikationskabel lösen<br>
-		3.	Vorsichtig den Flachring vom Gelenk wegschieben<br>
+		1. Lösen der Schrauben auf der blauen Abdeckung, blaue Abdeckung abnehmen<br>
+		2. Vorsichtig die Stromkabel und das Kommunikationskabel lösen<br>
+		3. Vorsichtig den Flachring vom Gelenk wegschieben<br>
 		<img src="images/austausch13.png" ></img><br>
 		<img src="images/austausch14.png" ></img><br>
-		4.	Entfernen des Teflon-Rings<br>
+		4. Entfernen des Teflon-Rings<br>
 		<img src="images/austausch15.png" ></img><br>
-		5.	Zuerst die Kontersenkschrauben(a) lösen, danach die anderen(b). Das Gelenk könnte abfallen, wenn es nicht dementsprechend liegt/befestigt ist.<br>
+		5. Zuerst die Kontersenkschrauben(a) lösen, danach die anderen(b). Das Gelenk könnte abfallen, wenn es nicht dementsprechend liegt/befestigt ist.<br>
 		<img src="images/austausch16.png" ></img><br>
-		6.	Das Gelenk ist nun lose und kann abgenommen werden. Auf die Kabel achten!<br>
+		6. Das Gelenk ist nun lose und kann abgenommen werden. Auf die Kabel achten!<br>
 		<img src="images/austausch17.png" ></img><br>
 		<br><b>Verbinden von Schraubverbindung:</b><br>
 		Funktioniert wie die Zerlegung rückwärts, jedoch gibt es ein paar Dinge auf die man achten muss.<br>
 		Alte Loctiterückstände entfernen. Die Schrauben sauber machen und wieder Loctite 243 auftagen, vor dem Zusammenbau.<br>
-			Immer neuen schwarzen flexiblen Flachring benutzen, um die IP-Klassifikation aufrecht zu halten.<br>
-		Den Nutzring ersetzen, wenn er abgenutzt oder kaputt ist.<br>
-		1.	Die Gelenke, wie auf dem Bild gezeigt, vorsichtig zusammenfügen. Die richtige Position ist wichtig.<br>
+		Immer neuen schwarzen flexiblen Flachring benutzen, um die IP-Klassifikation aufrecht zu halten.<br>
+		Den Nutzring ersetzen, wenn er abgenutzt oder kaputt ist.<br><br>
+		1. Die Gelenke, wie auf dem Bild gezeigt, vorsichtig zusammenfügen. Die richtige Position ist wichtig.<br>
 		<img src="images/austausch18.png" ></img><br>
-		2.	Zuerst die Senkkopfschrauben eindrehen, wie im Bild. Nicht das vorgegebene Drehmoment überschreiten.<br>
+		2. Zuerst die Senkkopfschrauben eindrehen, wie im Bild. Nicht das vorgegebene Drehmoment überschreiten.<br>
 		<img src="images/austausch19.png" ></img><br>
-		3.	Nun die anderen Schrauben anbringen, wie in dem Bild gezeigt. Nicht das vorgegebne Drehmoment überschreiten.<br>
+		3. Nun die anderen Schrauben anbringen, wie in dem Bild gezeigt. Nicht das vorgegebne Drehmoment überschreiten.<br>
 		<img src="images/austausch20.png" ></img><br>
 		<br><b>Zwingen Verbindung</b><br>
 		Folgende Gelenke sind mit einer Zwingenverbindung ausgestattet.<br>
 		<img src="images/austausch21.png" ></img><br>
 		<br><b>Zerlegen von Zwingenverbindung</b><br>
-		1.	Schrauben lösen an den blauen Deckel und den blauen Deckel abnehmen.<br>
-		2.	Vorsichtig die Stromkabel und das Kommunikationskabel lösen.<br>
-		3.	Den Flachring von dem Gelenk lösen.<br>
+		1. Schrauben lösen an den blauen Deckel und den blauen Deckel abnehmen.<br>
+		2. Vorsichtig die Stromkabel und das Kommunikationskabel lösen.<br>
+		3. Den Flachring von dem Gelenk lösen.<br>
 		<img src="images/austausch22.png" ></img><br>
-		4.	Löse die zwei Schrauben an der Zwinge. Das Gelenk kann abfallen, wenn es nicht richtig liegt.<br>
+		4. Löse die zwei Schrauben an der Zwinge. Das Gelenk kann abfallen, wenn es nicht richtig liegt.<br>
 		<img src="images/austausch23.png" ></img><br>
-		5.	Die Zwinge von beiden Seiten abziehen. <br>
+		5. Die Zwinge von beiden Seiten abziehen. <br>
 		<img src="images/austausch24.png" ></img><br>
-		6.	Das Gelenk ist nun lose und kann entfernt werden. Vorsicht auf die Kabel innen.<br>
+		6. Das Gelenk ist nun lose und kann entfernt werden. Auf die Kabel achten!<br>
 		<img src="images/austausch25.png" ></img><br>
 		<br><b>Verbinden einer Zwingenverbindung:</b><br>
-		-	Immer den Flachring/Dichtring mit einem neuen ersetzen, damit die IP-Klassifikation erhalten bleibt.<br>
-		-	Ersetzen des Schaustoffs an der Zwinge, falls kaputt, damit die IP-Klassifikation erhalten bleibt.<br>
-		-	Ersetzen des Nutzrings, wenn dieser stark abgenutzt oder kaputt ist.<br>
-		-	Die Punkte müssen übereinstimmen, damit die Verbindung richtig ist.<br>
-		-	Gelenke sollten in einer vertikalen Position verbunden werden.<br>
-		-	Sicher gehen, dass die Schrauben in die richtige Zwinge eingeführt werden.<br>
+		• Immer den Flachring/Dichtring mit einem neuen ersetzen, damit die IP-Klassifikation erhalten bleibt.<br>
+		• Ersetzen des Schaustoffs an der Zwinge, falls kaputt, damit die IP-Klassifikation erhalten bleibt.<br>
+		• Ersetzen des Nutzrings, wenn dieser stark abgenutzt oder kaputt ist.<br>
+		• Die Punkte müssen übereinstimmen, damit die Verbindung richtig ist.<br>
+		• Gelenke sollten in einer vertikalen Position verbunden werden.<br>
+		• Sicher gehen, dass die Schrauben in die richtige Zwinge eingeführt werden.<br>
 		Nur die Zwinge nochmal benutzen mit dem runden Marker.<br>
 		<img src="images/austausch26.png" ></img><br>
 		<img src="images/austausch27.png" ></img><br>
-		-	Wenn die Zwingen verschraubt werden, muss folgende Reihenfolge eingehalten werden, und auf das zulässige Drehmoment geachtet werden:<br>
-		1.	Anziehen auf einer Seite, bis der Spalt 1mm bis 1.5mm groß ist.<br>
-		2.	Anziehen der anderen Seite mit 5Nm.<br>
-		3.	Anziehen auch der ersten Seite mit 5Nm<br>
-		4.	Sichergehen, dass der Spalt auf beiden Seiten gleich groß ist. <br>
+		• Wenn die Zwingen verschraubt werden, muss folgende Reihenfolge eingehalten werden, 
+		und auf das zulässige Drehmoment geachtet werden:<br><br>
+		1. Anziehen auf einer Seite, bis der Spalt 1mm bis 1.5mm groß ist.<br>
+		2. Anziehen der anderen Seite mit 5Nm.<br>
+		3. Anziehen auch der ersten Seite mit 5Nm<br>
+		4. Sichergehen, dass der Spalt auf beiden Seiten gleich groß ist. <br>
 		<img src="images/austausch28.png" ></img><br>
-		<br><b>Werkzeug Flansch:</b><br>Werkzeugflansch ist eine Schraubverbindung und wird wie ein Gelenk mit Schraubverbindung auseinandergenommen.<br>
+		<br><b>Werkzeug Flansch:</b><br>Werkzeugflansch ist eine Schraubverbindung und wird wie ein 
+		Gelenk mit Schraubverbindung auseinandergenommen.<br>
 		Strom und Kommunikationskabel sind in einem Anschluss zusammen.</p>
 		<img src="images/austausch29.png" ></img>
         </br></br><hr></hr>
@@ -485,12 +487,12 @@
 	</div>
 	
 	<div id="chapter_18" class="jumbotron chapter_18" hidden>
-        <h1>Ersatzteilbeschaffung</h1>
-        <p>Teilenummer des zu bestellenden Teils auslesen.<br>
-		Absichern, dass man die richtigen Teilenummern ausgelesen hat, von allen Teilen, die man braucht.<br>
+        <h1>Ersatzteile</h1>
+        <p>Teilenummer der nötigen Teile ablesen.<br>
+		Sicher gehen, dass man die richtigen Teilenummern ausgelesen hat, von allen Teilen, die man braucht.<br>
 		Die Menge der jeweiligen Teile abklären.<br>
 		Per Teilenummer und mit der jeweiligen Menge die Bestellung abgeben.<br><br>
-		Den Katalog als Referenz benutzen!</p>
+		Den Katalog als Anhaltspunkt benutzen!</p>
 		<object width="750px" height="900px" data="doc/ServiceManual_EN.pdf"></object>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -505,26 +507,26 @@
 		Unterstützt werden hierbei folgende Punkte nicht:<br>
 		• Andere Wegpunktarten außer feste Wegpunkte<br>
 		• Bewegungskommandos mit Gelenkwinkeln als Angabe<br><br>
-		Falls diese Probleme zutreffen, muss man diese manuell korrigieren, nachdem der Key-Wegpunkt Prozess abgeschlossen ist.</p> <br>
+		Falls diese Probleme zutreffen, muss man diese manuell korrigieren, nachdem der Key-Wegpunkt Prozess abgeschlossen ist.</p><br>
 		<h2>Automatische Programm Korrektur</h2>
-		<p>1.	Lange den Run Button drücken, um den Experten Modus zu aktivieren.<br>
-		2.	Passwort eingeben und OK drücken<br>
+		<p>1. Lange den Run Button drücken, um den Experten Modus zu aktivieren.<br>
+		2. Passwort eingeben und OK drücken<br>
 		<img src="images/key1.png" ></img><br>
-		3.	Auf der linken Seite Kalibrieren/Calibration auswählen und den Punkt „Programm Korrektur mit Key-Wegpunkten“ wählen<br>
-		4.	Danach den Experten Modus verlassen<br>
+		3. Auf der linken Seite Kalibrieren/Calibration auswählen und den Punkt „Programm Korrektur mit Key-Wegpunkten“ wählen<br>
 		<img src="images/key2.png" ></img><br>
-		5.	Danach in das Hamburger Menü und Programmkorrektur wählen<br>
+		4. Danach den Experten Modus verlassen<br>
+		5. Danach in das Hamburger Menü und Programmkorrektur wählen<br>
 		<img src="images/key3.png" ></img><br>
-		6.	Passwort eingeben und OK drücken</p>
+		6. Passwort eingeben und OK drücken</p>
 		<img src="images/key4.png" ></img><br>
 		<h2>Wegpunkte neu definieren</h2>
-		<p>7.	Lade das gewünschte Programm<br>
+		<p>7. Lade das gewünschte Programm<br>
 		<img src="images/key5.png" ></img><br>
-		8.	Wähle einen der Key-Wegpunkte im Programm<br>
+		8. Wähle einen der Key-Wegpunkte im Programm<br>
 		<img src="images/key6.png" ></img><br>
 		Falls Wegpunkte nicht richtig übernommen wurden, sind diese Gelb und müssen neu geteached werden<br>
 		<img src="images/key7.png" ></img><br>
-		9.	Wegpunkte neu setzen<br>
+		9. Wegpunkte neu setzen<br>
 		10.	Den Roboter zu der Position fahren und den neuen Wegpunkt festlegen<br>
 		<img src="images/key8.png" ></img><br><br>
 		Den CTP (abhängiger TCP) richtig wählen, damit der Offset für die Punkte richtig ist. <br>
@@ -539,22 +541,21 @@
 		<p>Man kann einige Key-Wegpunkte von mehreren Programmen hinzufügen, in dem man noch mehr Programme hinzufügt und alle mit den Schritten 7-12 neu definiert.<br><br>
 		13.	Wenn Key-Wegpunkte über mehrere Programme verteilt sind: Haupt-Node auswählen im Programm-Baum, „lade Programm“ auswählen und wieder bei Schritt 7 beginnen.<br>
 		</p><img src="images/key11.png" ></img><br>
-		<img src="images/key12.png" ></img><br>
-		</p><h2>Handhabung von Key-Wegpunkten<h2>
+		<img src="images/key12.png" ></img><br></p>
+		<h2>Handhabung von Key-Wegpunkten</h2>
 		<p>Die Key-Wegpunkte sind gruppiert und jeder bezieht sich auf ein Quell-Programm.<br>
 		• Man kann eine Korrektur-Node als Übersicht öffnen<br>
 		• Man kann einen Wegpunkt auswählen, oder eine Wegpunktgruppe und diese löschen</p>
-		<h2>Programmkorrektur<h2>
+		<h2>Programmkorrektur</h2>
 		<p>Sobald alle Key-Wegpunkte neu definiert sind, versucht Polyscope die Korrektur des Programms im Modus „Programmkorrektur“.<br><br>
 		14.	Lade Programm und dort das zu korrigierende Programm auswählen<br>
 		15.	Wenn die Wegpunkte erscheinen, „Korrigiere Wegpunkte“ wählen<br>
 		16.	Sobald die Korrektur fertig ist, erscheint ein Fenster<br>
 		17.	Falls es fehlschlägt, die Key-Wegpunkte und die Genauigkeit überprüfen<br>
 		Mehr Genauigkeit wird mittels mehreren Wegpunkten erreicht.<br>
-		18.	Nach der Korrektur das Programm mittels langsamen Testlauf abfahren<br>
+		18. Nach der Korrektur das Programm mittels langsamen Testlauf abfahren<br>
 		19.	Wenn alles richtig angefahren wird, speichern des Programms!<br>
-		20.	Um andere Programme zu korrigieren, wieder bei Schritt 14 anfangen</p>
-        </br><hr></hr>
+		20.	Um andere Programme zu korrigieren, wieder bei Schritt 14 anfangen</p></br> <hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
@@ -571,15 +572,15 @@
 		Die Liste zeigt an, wie oft man einen Universal Robot inspizieren sollte. Falls ein Teil keinen akzeptablen Zustand hat, muss dieses Problem sofort behoben werden.
 		<br>Niemals einen Kompressor zum säubern benutzen!<br>
 		<img src="images/wartung1.png"></img><br><br>
-		1.	Bewege den Roboter in die Home/Zero Position, falls möglich.<br>
-		2.	Roboter ausschalten und Stromkabel von der Control Box abziehen.<br>
-		3.	Überprüfen des Kabels zwischen Roboter und Control Box.<br>
-		4.	Überprüfen der Schrauben an der Basis, ob diese fest sind.<br>
-		5.	Überprüfen ob die Schrauben am Werkzeugflansch richtig angezogen sind.<br>
-		6.	Überprüfen des Zustandes der Dichtringe. Falls nötig, ersetzen!<br>
-		7.	Überprüfen der blauen Abdeckungen auf Brüche. Falls nötig, ersetzen!<br>
-		8.	Überprüfen der Schrauben an den blauen Abdeckungen, ob diese richtig angezogen sind.<br><br>
-		-	Falls ein Schaden während der Garantiezeit auffällt, melden sie sich bei dem Verkäufer, wo der Roboter gekauft wurde.<br>
+		1. Bewege den Roboter in die Home/Zero Position, falls möglich.<br>
+		2. Roboter ausschalten und Stromkabel von der Control Box abziehen.<br>
+		3. Überprüfen des Kabels zwischen Roboter und Control Box.<br>
+		4. Überprüfen der Schrauben an der Basis, ob diese fest sind.<br>
+		5. Überprüfen ob die Schrauben am Werkzeugflansch richtig angezogen sind.<br>
+		6. Überprüfen des Zustandes der Dichtringe. Falls nötig, ersetzen!<br>
+		7. Überprüfen der blauen Abdeckungen auf Brüche. Falls nötig, ersetzen!<br>
+		8. Überprüfen der Schrauben an den blauen Abdeckungen, ob diese richtig angezogen sind.<br><br>
+		• Falls ein Schaden während der Garantiezeit auffällt, melden sie sich bei dem Verkäufer, wo der Roboter gekauft wurde.<br>
 		<br><b>Funktionale Inspektion:</b><br>Der Grund hinter der funktionalen Inspktion ist, dass sicher gegangen wird, dass die Schrauben, 
 		Werkzeuge und der Roboterarm nicht lose sind.<br>
 		Alle Schrauben und Bolzen müssen mit einem Drehmomentschlüssel und den dazugehörigen Moment angezogen werden. 
@@ -587,44 +588,43 @@
 		<b>Säubern:</b><br>Staub, Dreck, Öl den man auf dem Roboter erkennen kann, kann einfach mit einem Tuch und einem der folgenden Mittel weggewischt werden:
 		Wasser, Isopropyl Alkohol, 10% Ethanol Alkohol oder 10% Naphta. In selten Fällen kann ein wenig Schmierfett an den Gelenken sichtbar sein. 
 		Das beeinträchtigt nicht die Funktion, Benutzung oder Langlebigkeit des Gelenks.
-
 		<br><br><b>Control Box und Teach Pendant:</b><br>
 		Die Liste zeigt an, wie oft man die Control Box und das Teach Pendant inspizieren sollte. Falls ein Teil keinen akzeptablen Zustand hat, 
 		muss dieses Problem sofort behoben werden.<br>
 		<img src="images/wartung2.png"></img><br>
 		<br><b>Funktions- und Sicherheitsinspektion:</b><br>
-		-	Test der Sicherheitsfunktionen sollte monatlich getestet werden!<br>
+		• Test der Sicherheitsfunktionen sollte monatlich getestet werden!<br>
 		<img src="images/wartung3.png"></img><br><br>
-		1.	Drücken der Not-Aus-Taste auf dem Teach Pendant<br>
-		2.	Beobachte den Roboterstopp und die Deaktivierung der Gelenke<br>
-		3.	Roboter wieder anschalten<br><br>
+		1. Drücken der Not-Aus-Taste auf dem Teach Pendant<br>
+		2. Beobachte den Roboterstopp und die Deaktivierung der Gelenke<br>
+		3. Roboter wieder anschalten<br><br>
 		<b>Freedrive Modus:</b><br>
-		1.	Werkzeug abschrauben oder den TCP richtig einstellen.<br>
-		2.	Auf dem Teach Pendant die Taste für den Freedrive drücken.<br>
-		3.	Bewege den Roboter in eine horizontale ausgefahrene Position und Taste loslassen.<br>
-		4.	Versichern, dass der Roboter die Postion halten.<br><br>
+		1. Werkzeug abschrauben oder den TCP richtig einstellen.<br>
+		2. Auf dem Teach Pendant die Taste für den Freedrive drücken.<br>
+		3. Bewege den Roboter in eine horizontale ausgefahrene Position und Taste loslassen.<br>
+		4. Versichern, dass der Roboter die Postion halten.<br><br>
 		<b>Backdrive Mode:</b><br>
 		Falls der Roboter kurz vor einer Kollision ist, kann der Backdrive Modus verwendet werden, um den Roboterarm wieder 
 		in eine sichere Position gebracht wird, bevor er wieder initialisiert wird.<br><br>
-		1.	Robotermotoren starten.<br>
+		1. Robotermotoren starten.<br>
 		<img src="images/wartung4.png"></img><br>
-		2.	Drücken und halten des Freedrive modus. Status des Roboters ändert sich zu „Backdrive“.<br>
+		2. Drücken und halten des Freedrive modus. Status des Roboters ändert sich zu „Backdrive“.<br>
 		<img src="images/wartung5.png"></img><br>
-		3.	Roboter beweglich. Gelenkbremsen werden dort gelöst, wo es nötig ist, wenn man die Freedrive Taste drückt.<br>
-		<br>-	Während dem Backdrive Modus ist der Roboter schwer zu bewegen.
-		<br>-	Backdrive Modus muss an allen Gelenken probiert werden.<br>
+		3. Roboter beweglich. Gelenkbremsen werden dort gelöst, wo es nötig ist, wenn man die Freedrive Taste drückt.<br>
+		<br>• Während dem Backdrive Modus ist der Roboter schwer zu bewegen.
+		<br>• Backdrive Modus muss an allen Gelenken probiert werden.<br>
 		<br><b>Sicherheit:</b><br> Sichergehen, dass die Sicherheitseinstellungen alle mit der Roboterinstallation konform sind.
 		Überprüfen, dass Sicherheitseingänge und Ausgänge aktiv sind und sie durch Polyscope oder externe Geräte ausgelöst werden können.
 		<br><br><b>Visuelle Inspektion:</b><br>
-		1.	Abziehen des Stromkabels der Control Box<br>
-		2.	Überprüfen der Platine, dass alle Komponenten richtig und ordentlich angeschlossen sind.<br>
-		3.	Überprüfen, ob Staub oder Dreck in der Control Box sind. Säubern nur mit einem ESD-konformen Mittel/Gerät.<br>
-		<br>-	Niemals Kompressor Luft zum Säubern benutzen!<br><br>
+		1. Abziehen des Stromkabels der Control Box<br>
+		2. Überprüfen der Platine, dass alle Komponenten richtig und ordentlich angeschlossen sind.<br>
+		3. Überprüfen, ob Staub oder Dreck in der Control Box sind. Säubern nur mit einem ESD-konformen Mittel/Gerät.<br>
+		<br>• Niemals Kompressor Luft zum Säubern benutzen!<br><br>
 		<b>Säubern:</b><br>
 		Teach Pendant: <br>Es könnte nötig werden, den Touchscreen des Tablets zu säubern. Keine aggressiven Mittel oder Verdünner benutzen. 
-		Control Box:<br> Es gibt 2 Filter. Einen auf jeder Seite. <br>
-		1.	Vorsichtig an dem Kuststoffrahmen drücken, wie es auf dem Bild gezeigt wird. Der Rahmen wird sich ein wenig raus knicken.<br>
-		2.	Entferne den Filter, um ihn zu säubern. Mittels leichten Druckes, den Filter säubern oder einen neuen einsetzen.<br>
+		Control Box:<br> Es gibt zwei Filter. Einen auf jeder Seite. <br><br>
+		1. Vorsichtig an dem Kuststoffrahmen drücken, wie es auf dem Bild gezeigt wird. Der Rahmen wird sich ein wenig raus knicken.<br>
+		2. Entferne den Filter, um ihn zu säubern. Mittels leichten Druckes, den Filter säubern oder einen neuen einsetzen.<br>
 		<img src="images/wartung6.png"></img><br>
 		</p>
         </br></br><hr></hr>
@@ -634,7 +634,7 @@
 	
 	<div id="chapter_21" class="jumbotron chapter_21" hidden>
         <h1>IMM-Programmierung</h1>
-        <p>
+        <p>•
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -664,7 +664,7 @@
 		<img src="images/oem7.png" ></img><br>
 		10. Nun die losgelöste Platte herausziehen<br>
 		<img src="images/oem8.png" ></img><br>
-		11. Es gibt 2 Möglichkeiten<br></p>
+		11. Es gibt zwei Möglichkeiten<br></p>
 		<p style="text-indent:25px">a. Stromversorgung und/oder Kontrollbrett entfernen</p>
 		<p style="text-indent:25px">b. Lüfter und/oder Stromverbraucher entfernen</p><br>
 		<p>Für den Zusammenbau, die Schritte rückwärts durchlaufen.</p>
@@ -676,7 +676,7 @@
 	<div id="chapter_23" class="jumbotron chapter_23" hidden>
         <h1>ESD Verträglichkeit</h1>
         <p>Um Schaden an den ESD anfälligen Bauteilen zu verhindern, halten sie sich an diese Instruktionen und die sowieso geltenden Sicherheiten aus der Elektronik.<br><br>
-		Benutzen sie ein ESD Handgelenk-Band und zusätzliche ESD Tüten für ausgebaute Teile.<br><br>
+		Benutzen eines ESD Armband und zusätzliche ESD Tüten für ausgebaute Teile.<br><br>
 		ESD anfällige Bauteile so lange in ihren Tüten lassen, bis der Moment der Installation kommt. Diese Bauteile nur ablegen, während sie in ihren Tüten sind.<br><br>
 		ESD anfällige Bauteile an den Ecken halten und keine Pins berühren.<br><img src="images/esd1.png" ></img><br><br>
 		Vorsicht ist vor allem Geboten, wenn es kaltes Wetter oder Hitze in der Nähe gibt. Niedrige Luftfeuchte erhöht die statische Elektrizität.</p>
@@ -686,23 +686,25 @@
 	</div>
 	
 	<div id="chapter_24" class="jumbotron chapter_24" hidden>
-        <h1>System-Backup</h1>
-        <p>Ein Backup macht man mit der Funktion namens „Support File“. (Polyscope 5.8 oder höher)<br>
-		Einen USB-Stick mit >4GB nötig, da das Backup recht groß sein kann.<br>
-		Die Funktion findet man wie auf dem Bild abgebildet.<br>
-		--> LOG --> Support file<br>
-		<image src="images/backup_supportfile.png"></image><br>
+        <h2>System-Backup:</h2>
+		<p>Ein Backup macht ein ganzes Abbild des aktuellen Stand des Roboters.<br>
+		Ein USB-Stick mit >4GB nötig, da das Backup recht groß sein kann. <br>Dies kann sehr lange dauern (20 Minuten).<br>
+		Diese Aktion ist unter --> "Einstellungen" --> "System" --> "Backup".<br>
+		<h2>Log-Daten:</h2>
+		<p>--> LOG --> Support file<br>
+		Die Funktion findet man wie auf dem Bild abgebildet.
+		<image src="images/backup_supportfile.png" width="700px" height="400px"></image><br>
 		<br>Folgendes Fenster wird erscheinen, welches mit "weiter"/"continue" bestätigt wird.<br>
 		<image src="images/backup_popup.png"></image><br><br>
-		<b>ALTERNATIVE:</b><br>Magic Files ist eine gute Alternative die versionübergreifend funktioniert.<br><br>
+		<br><b>ALTERNATIVE:</b><br>Magic Files ist eine gute Alternative die versionübergreifend funktioniert.<br><br>
 		1. Lade Magic Files von UR Internetseite runter und speichere es in dem Root-Ordner.
 		Wenn mehr als eine Datei da sein sollten, laufen diese gerade simultan. Für jede Datei kommt eine Warnung. 
 		USB Stick erst abziehen, wenn alles fertig geladen ist. Es werden viele Ordner kreiert 
-		welche durchnummeriert sind. (e.g., 201855xxxx_0, 201855xxxx_1). <br>
+		welche durchnummeriert sind. (e.g., 201855xxxx_0, 201855xxxx_1).<br>
 		2. Stecke den USB Stick in die Schnittstelle an dem Teach-Tablet.<br>
 		3. Ein rotes ! USB ! -Zeichen erscheint auf dem Bildschirm. USB Stick nicht verändern!<br>
 		4. Warten auf grünes USB-Zeichen. Wenn mehrere Magic Files entstehen, Step 3 nochmals machen. Große Daten (Logs,..) 
-		können bis zu 2 Minuten brauchen zum runterladen. <br>
+		können bis zu 2 Minuten brauchen zum runterladen.<br>
 		5. Nach der letzten Magic Datei, kann der USB Stick entfernt werden.<br>
 		<br>Bevor man das nächste Backup macht, sollte man die enstanden Files erst auf einen PC zwischenspeichern. Denn es kann passieren,
 		dass das nächste Backup die Daten überschreibt.</p>
@@ -715,7 +717,8 @@
         <h1>Support-Log Reader</h1>
         <p>Log-Daten von UR kann man mit dem Support Log Reader auslesen.<br>
 		Den findet man unter www.universal-robots.com/support.<br>
-		Das Programm ist folgender Maßen aufgebaut und zu lesen.<br><br>
+		Die Log-Einträge werden hier ordentlich formatiert und überschaubar angezeigt.<br>
+		Das Programm ist folgendermaßen aufgebaut und zu lesen.<br><br>
 		1. Filterauswahl<br>
 		2. Tool bar; Lade Log Dateien, Export Errorcodes, Sprache ändern Textsuche / Fehlersuche<br>
 		4. Log Start Info Anzeige; Wird bei jedem Roboter Start erstellt. <br>
@@ -754,7 +757,7 @@
 		Sicherungsdaten:<br>
 		Unterbrechung -> 1000A @ 32VDC  ;  Volt -> 32 VDC<br>
 		Komponententemperatur -> -40° bis 125° Celsius<br>
-			Systemtemperatur -> -40° bis 105° Celsius<br>
+		Systemtemperatur -> -40° bis 105° Celsius<br>
 		Terminals -> Silber mit Zinklegierung;  Gehäuse -> PA66<br>
 		Konform mit -> SAE J2077, ISO 8820-3<br>
 		UL 248 Spezial Zweck Sicherung</p>
@@ -780,8 +783,7 @@
 		socket_send_string ("TRG", socketname = s_out)<br>
 		…<br>socket_close (socketname = s_in)<br>socket_close (socketname = s_out)</code><br>
 		<br><b>2. TCP/IP:</b><br>
-		Bestehend aus den 7 OSI Schichten, bildet es das meist verbreiteste Netzwerk über Ethernet-Kabel.
-		
+		Bestehend aus den 7 OSI Schichten, bildet es das meist verbreiteste Netzwerk über Ethernet-Kabel.<br>
 		<br><b>3. URCaps:</b><br>
 		Viele Geräte haben ein eigenes URCap, welches die komplette Bedienung erleichtert. 
 		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurechtgelegt ist.
