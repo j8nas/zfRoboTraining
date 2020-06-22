@@ -137,8 +137,7 @@
 		<p>Drehen Sie immer in der Reihenfolge: 1, 2 und dann 3.<br>
 		Mittels 4(x), 5(y) und 6(z) verschieben Sie den Ursprung global im Raum.<br>
 		Nach Verschieben/Verdrehen des Koordinatensystems, entfernen Sie den Haken bei "kos", um das Kardan-System einzublenden.<br><br>
-		Hier wird um die jeweilige Achse rotiert.
-		</p>
+		Hier wird um die jeweilige Achse rotiert.</p>
 		<object width="800px" height="600px" data="coordgame.html">
 		</object>
 		<br>Getestet und funktionstüchtig unter Google Chrome(version 81.3). Es muss ES6 aktiviert sein.
@@ -771,8 +770,8 @@
         <p>Zur Kommunikation zwischen dem Roboter und dem jeweiligen Gerät, gibt es einige Verbindungsarten. 
 		Die meist angewendeten sind IO-Link, Socket-Connection per Skript, IP und URCaps. 
 		Ein Teilnehmer übernimmt meist die Server-Rolle, da Peer-to-Peer nicht wirklich in der 
-		Industrieumgebung benutzt wird.<br><br>
-		<b>1. Socket-Connection per Skript:</b><br>
+		Industrieumgebung benutzt wird. <br>Im Folgenden werden Möglichkeiten der Kommunikation gezeigt.<br><br>
+		<b>1. Socket-Connection per Skript-Baustein:</b><br>
 		Hier werden Ports auf dem Robotercontroller für "in" und "out" geöffnet. Darüber sendet man dann
 		ein Triggersignal an das gewünschte Gerät. Dies sollte dann den Befehl ausführen und eine Bestätigung zurücksenden,
 		ob es funktioniert hat oder einen Fehler geworfen hat.<br>
@@ -782,8 +781,8 @@
 		socket_2 = socket_open(IP, PORT, socketname = s_in)<br>
 		socket_send_string ("TRG", socketname = s_out)<br>
 		…<br>socket_close (socketname = s_in)<br>socket_close (socketname = s_out)</code><br>
-		<br><b>2. TCP/IP:</b><br>
-		Bestehend aus den 7 OSI Schichten, bildet es das meist verbreiteste Netzwerk über Ethernet-Kabel.<br>
+		<br><b>2. Ethernet/IP:</b><br>
+		<img src="images/EthernetIP.png" width="750px" height="450px"></img><br>
 		<br><b>3. URCaps:</b><br>
 		Viele Geräte haben ein eigenes URCap, welches die komplette Bedienung erleichtert. 
 		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurechtgelegt ist.
@@ -791,7 +790,13 @@
 		<br><b>4. IO-Link:</b><br>
 		Dies ist die Anbindungsstelle für intelligente Sensoren und Aktoren an ein Automatisierungssystem. 
 		Es umfasst die elektrischen Anschlussdaten und auch das digitale Kommunikationsprotokoll. 
-		Die ganze Steuerung findet über den IO-Link-Master statt, der das System überblickt.<br></p>
+		Die ganze Steuerung findet über den IO-Link-Master statt, der das System überblickt.<br>
+		<br><b>5. ModBUS:</b><br>
+		<img src="images/Modbus.png" width="750px" height="450px"></img><br>
+		<br>
+		<br><b>6. Profinet:</b><br>
+		<img src="images/Profinet.png" width="750px" height="450px"></img><br>
+		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -814,6 +819,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/questions.js"></script>
   <script src="js/script.js"></script>
-	<!-- quarantine sucks -->
+	<!-- quarantine 2020 sucks -->
 </body>
 </html>
