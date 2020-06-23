@@ -73,12 +73,12 @@
 			<h2>Sicherheit:</h2>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter9_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Asimov’schen Gesetze</button></p></div>
-				<div class="col-md-4"><p><button class="chapter10_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Sicherheit</button></p></div>
-				<div class="col-md-4"><p><button class="chapter11_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">ISO und Norm</button></p></div>
+				<div class="col-md-4"><p><button class="chapter10_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kraft/Druckmessung</button></p></div>
+				<div class="col-md-4"><p><button class="chapter11_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Normen</button></p></div>
 			</div>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter30_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Sicherheitskonfiguration</button></p></div>
-
+				<div class="col-md-4"><p><button class="chapter33_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">CE-Kennzeichnung</button></p></div>
 			</div>
 			
 			<hr></hr>
@@ -174,7 +174,8 @@
         <h1>TCP</h1>
         <p>Der TCP (tool center point) stellt den vordersten Punkt des Roboterarms, den Flansch, dar.
           Wenn ein Effektor montiert ist, muss der TCP anhand dessen kalibriert werden.
-		  Der TCP ist der Hauptreferenzpunkt des Roboters und anhand dessen, werden z.b. Wegpunkte gespeichert.<br><br>
+		  Der TCP ist der Hauptreferenzpunkt des Roboters und anhand dessen, werden z.b. Wegpunkte gespeichert.<br>
+		  <img src="images/tcp1.png"></img><br><br>
 		<h1>Ebenen</h1>
 		  <p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
 		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
@@ -183,7 +184,7 @@
 		  • "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
 		  • "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
 		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br><br></p>  
-		  <img src="images/ebenen.png" height="700" width="1000"></img>
+		  <img src="images/ebenen.png" height="400" width="700"></img>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -306,27 +307,19 @@
 	</div>
 	
 	<div id="chapter_10" class="jumbotron chapter_10" hidden>
-        <h1>Sicherheit</h1>
-        <p>Sicherheit ist der wichtigste Punkt in der Industrie, der sehr viel Aufmerksamkeit bekommen muss.<br><br>
-		Grad im Umgang mit Maschinen und vorallem mit Cobots, die mit einem Benutzer interagieren sollen, ist dies ein großes Thema.<br>
-		Sicherheitsschuhe sind ein Muss. Normalerweise stehen die Cobots, auch mit ihrem Namen dafür, dass sie sehr menschenfreundlich sind,
-		doch kann jederzeit mal etwas umfallen, runterfallen oder eine ungewollte Bewegung passieren.<br><br>
-		Dazu sollten auch, wie immer in industrieller Umgebung, keine Stolperfallen in Roboternähe sein.<br><br>
-		Obwohl der Cobot mit Sensorik ausgestattet ist, die auf den Menschen aufpasst, sollte man ihm trotzdem mit Respekt gegenübertreten, 
-		da selbst die Safety-Thresholds ordentlich Schmerz versuchen können.<br></p>
+        <h1>Kraft/Druckmessung</h1>
+        <p>
+		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
 	
 	<div id="chapter_11" class="jumbotron chapter_11" hidden>
-        <h1>ISO und Norm</h1>
-        <p>Wie schon in dem Kapitel Sicherheit beschreiben, gibt es hier nun die rechtliche Einordnung der Roboter.<br><br>
-		<b>ISO 15066</b><br>
-		<img src="images/norm1.png" height="650" width="900"></img><br><br>
-		<b>DIN EN ISO 10218-2</b><br>
-		<img src="images/norm2.png" height="650" width="900"></img><br>
-		<br>Diese Normen greifen ineinander und stellen beide fast das gleiche dar. Beide verdeutlichen die Wichtigkeit dieser Thematik.<br>
+        <h1>Normen</h1>
+        <p>Wenn es um Roboter geht, spielen viele Normen einen großen Faktor.<br>
+		<image src="images/norm3.png" width="900"></image>
+		<br>Diese Normen greifen ineinander und stellen das große Grundkonstrukt im Bereich der Robotik. 
 		Wir benutzen ausschließlich kollaborative Roboter, welche den größt möglichen Schutz für den Benutzer bieten.
 		Somit ist eine lockere Arbeitsumgebung möglich, in der man mit dem Roboter zusammen im gleichen Bereich sein darf.<br></p>
         </br></br><hr></hr>
@@ -359,10 +352,16 @@
         <h1>Flansch</h1>
         <p>Jeder Roboter hat einen Flansch, an den man Effektoren anbringen kann. Manche Roboter werden mit einem dazugehörigen Greifer gefertigt, 
 		doch diese sind nicht so vielseitig und modular einsetzbar, wie Roboter, die man mit einem beliebigen Effektor ausrüsten und betreiben kann.
-		Direkt an dem Flansch gibt es je nach Robotermarke verschiedene Anschlussmöglichkeiten. Universal Robot hat einen digitalen Ein- und Ausgänge und Stromversorgung am Flansch.<br>
-		</p><br>
+		Direkt an dem Flansch gibt es je nach Robotermarke verschiedene Anschlussmöglichkeiten. 
+		Universal Robot hat einen digitalen Ein- und Ausgänge und Stromversorgung am Flansch.<br></p>
 		<p>Universal Robot:<br><image src="images/flansche4.jpg" height="500" width="700"></image><br>
-		
+		Wenn man sich einen eigenen Adapter konstruieren muss, um ein Effektor an den Flansch an zu bringen, werden folgende Maße benötigt.<br>
+		<br><image src="images/flansch5.png"></image><br><br>		
+		Die mögliche Nutzlast der UR unterscheidet sich zwischen den verschiedenen Serien.<br>
+		Diese sollte nicht überschritten werden und kann ab einer gewissen Kragarmlänge auch variieren.<br>
+		UR5e - 5kg<br>
+		UR10e - 10kg<br>
+		UR16e - 16kg<br></p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -385,10 +384,13 @@
         <p>Damit der Roboter mit seiner Umwelt kommunizieren kann, hat er Eingänge und Ausgänge.<br>
 		Steuerbar sind somit Förderbänder, Greifer und viele andere Geräte.
 		<br>Durch Sensoren bekommt der Roboter Anweisungen von außen.<br>
-		<img src="images/inputoutput.jpg" width="900" height="600"></img><br><br>
+		<img src="images/inputoutput.jpg" width="700" height="400"></img><br><br>
 		Die Anschlüsse lassen sich recht intuitiv aufschlüsseln.<br>
 		24 Volt und 0 Volt, um jeweilige Geräte mit Spannung zu versorgen.<br>
-		Inputs und Outputs gibt es zu genüge als konfigurierbare, analoge und digitale Art.<br></p>
+		Inputs und Outputs gibt es zu genüge als konfigurierbare, analoge und digitale Art.<br>
+		<img src="images/io1.png"></img><br>
+		In der Software kann man die Ein- und Ausgänge mit besonderen Aufgaben belegen oder auch umbenennen für leichteres Wiederfinden und Aufrufen in einem Skript.<br>
+		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -717,14 +719,14 @@
 	</div>
 	
 	<div id="chapter_24" class="jumbotron chapter_24" hidden>
-        <h2>System-Backup:</h2>
+        <h2>System-Backup</h2>
 		<p>Ein Backup macht ein ganzes Abbild des aktuellen Stand des Roboters. 
 		Dies beinhaltet die Software Version von Polyscope und alle anderen Daten, 
 		die auf diesem Roboter vorhanden sind.<br>
 		Ein USB-Stick mit >4GB nötig, da das Backup recht groß sein kann. <br>Dies kann sehr lange dauern (20 Minuten).<br>
 		Diese Aktion ist unter --> "Einstellungen" --> "System" --> "Backup".<br>
 		Dieses Backup kann man auf andere Roboter installieren oder auch wieder auf den gleichen.<br>
-		<h2>Log-Daten:</h2>
+		<h2>Log-Daten</h2>
 		<p>--> LOG --> Support file<br>
 		Die Funktion findet man wie auf dem Bild abgebildet.
 		<image src="images/backup_supportfile.png" width="700px" height="400px"></image><br>
@@ -839,7 +841,7 @@
 	</div>
 	
 	<div id="chapter_28" class="jumbotron chapter_28" hidden>
-        <h2>Dual-Kalibrierung</h2>
+        <h1>Dual-Kalibrierung</h1>
 		<p>Dieses Vorgehen benötigt zwei Roboter der gleichen Machart und das Kalibrierungstool von Universal Robot.
 		Wie auf dem Bild zu sehen, müssen die Roboter auf den gleichschenkligen Spannbock angebracht werden. 
 		Die beiden Tool-Center-Points werden durch das Verbindungsstück aneinandergekoppelt.<br>
@@ -938,7 +940,7 @@
 	
 	<div id="chapter_29" class="jumbotron chapter_29" hidden>
         <h1>Greifer</h1>
-        <p> ...
+        <p> <iframe src="https://trw1.sharepoint.com/:x:/r/sites/PTCRV/Shared%20Documents/Archiv/Markus%20Werner/Greifer%20Benchmark/Greifer%20Benchmark.xlsx?d=w82c10465a73e4fdf9d1712c7a03f7367&csf=1&web=1&e=QcmlAM" width="900"></iframe>
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -967,7 +969,7 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
 	
-		<div id="chapter_32" class="jumbotron chapter_32" hidden>
+	<div id="chapter_32" class="jumbotron chapter_32" hidden>
         <h1>Roboter Reset</h1>
         <p> ...
 		</p>
@@ -976,6 +978,15 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
 	
+	
+	<div id="chapter_33" class="jumbotron chapter_33" hidden>
+        <h1>CE-Kennzeichnung:</h1>
+        <p> ...
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>	
 	
     <div id="over" class="jumbotron quiz_end" hidden>
         <h1>Das Quiz ist vorbei.</h1>
