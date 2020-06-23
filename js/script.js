@@ -150,8 +150,31 @@ $(".chapter27_btn").click(function() {
     startChapter27();
   });
 });
-
-
+$(".chapter28_btn").click(function() {
+  $(".start_screen").fadeOut(function() {
+    startChapter28();
+  });
+});
+$(".chapter29_btn").click(function() {
+  $(".start_screen").fadeOut(function() {
+    startChapter29();
+  });
+});
+$(".chapter30_btn").click(function() {
+  $(".start_screen").fadeOut(function() {
+    startChapter30();
+  });
+});
+$(".chapter31_btn").click(function() {
+  $(".start_screen").fadeOut(function() {
+    startChapter31();
+  });
+});
+$(".chapter32_btn").click(function() {
+  $(".start_screen").fadeOut(function() {
+    startChapter32();
+  });
+});
 
 
 function startChapter1(){
@@ -235,8 +258,21 @@ function startChapter26(){
 function startChapter27(){
 	$(".chapter_27").fadeIn();
 }
-
-
+function startChapter28(){
+	$(".chapter_28").fadeIn();
+}
+function startChapter29(){
+	$(".chapter_29").fadeIn();
+}
+function startChapter30(){
+	$(".chapter_30").fadeIn();
+}
+function startChapter31(){
+	$(".chapter_31").fadeIn();
+}
+function startChapter32(){
+	$(".chapter_32").fadeIn();
+}
 
 function startQuiz() {
   showNextQuestion();
@@ -373,8 +409,17 @@ $(".restartchapter").click(function() {
   $(".startChapter26").fadeOut();
   $(".startChapter27").fadeOut();
   $(".startChapter28").fadeOut();
+    $(".startChapter29").fadeOut();
+	  $(".startChapter30").fadeOut();
+	    $(".startChapter31").fadeOut();
+		  $(".startChapter32").fadeOut();
   $("#output_coord").fadeOut();
 
+$(".chapter_32").fadeOut(function() {
+$(".chapter_31").fadeOut(function() {
+	$(".chapter_30").fadeOut(function() {
+		$(".chapter_29").fadeOut(function() {
+			$(".chapter_28").fadeOut(function() {
  $(".chapter_27").fadeOut(function() {
 	 $(".chapter_26").fadeOut(function() {
 	  $(".chapter_25").fadeOut(function() {
@@ -431,3 +476,8 @@ $(".restartchapter").click(function() {
 						   });
 						      });
 							     });
+								  });
+								   });
+								    });
+									 });
+									  });
