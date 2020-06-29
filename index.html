@@ -264,7 +264,11 @@
 		Es wird ein Bezug zwischen Roboterkoordinaten und Kamerakoordinaten berechnet.<br>
 		Wenn die Kamera ein Objekt erkennt und dessen Koordinaten hat, werden diese in die Koordinaten des Roboters umgerechnet und der TCP kann sich durch einen Fahrbefehl dort hinbewegen.<br>
 		Weitere Themen der Kameratechnik werden schnell sehr komplex.</p>
-        </br></br><hr></hr>
+		<h2>Baumer</h2>
+		<h2>Cognex</h2>
+		<h2>SensoPart</h2>
+		
+		</br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
@@ -315,8 +319,18 @@
 	
 	<div id="chapter_10" class="jumbotron chapter_10" hidden>
         <h1>Kraft/Druckmessung</h1>
-        <p>
-		</p>
+        <p>Kraft und Druckmessungen sind für die Analyse des Gefahrenspotential des Roboters essenziell, damit festgestellt wird,
+		was für eine Gefährdung von dem Roboter während seiner Bewegungen ausgeht.<br>
+		Dies passiert mittels Kraftmessdosen, auf die der Roboter eine Kollision fährt.<br>
+		Diese Dosen gibt es in verschiedenen Ausführungen. <br>Hier z.B. zu sehen von GTE Cobosafe.<br>
+		<img src="images/druck4.png" width="650"></img><br><br>
+		Das Kraft-/Druckprofil, welches von der Dose aufgenommen wird, wird in einem Graphen festgehalten.<br>
+		Die Auswertung passiert in der Cobosafe Software.<br>
+		<img src="images/druck3.png"></img><br>
+		<br>Von Normen festgelegt, gibt es eine Tabelle, die die erlaubten Kräfte auflistet. Das ist für jeden Bereich des menschlichen
+		Körpers unterschiedlich.<br>
+		<img src="images/druck1.png"></img><br>
+		<img src="images/druck2.png"></img><br></p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -964,11 +978,13 @@
         <h1>Sicherheitskonfiguration</h1>
 		<p>Viele Abschnitte in diesem Bereich benötigen ein Passwort um bearbeitet zu werden.</p><br>
 		<h2>Roboter Limits</h2>
+		<p>
 		
-		
+		</p>
 		<h2>Gelenkgrenzen</h2>
+		<p>
 		
-		
+		</p>
         <h2>Ebenen</h2>
 		<p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
 		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
@@ -976,18 +992,19 @@
 		  • "Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
 		  • "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
 		  • "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
-		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br><br> 
-		  <img src="images/ebenen.png" height="400" width="700"></img>
-		</p>
-		
+		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br>
+		  <img src="images/ebenen.png"  width="600"></img></p>
 		<h2>Werkzeug</h2>
-		
+		<p>Der TCP muss an das jeweilige Werkzeug angepasst werden. Das ist unter der Allgemeinen Konfiguration möglich.<br>
+		Doch hier lässt sich der absolute TCP verschieben, wenn für immer etwas daran befestigt ist. Dazu gibt es auch 
+		die Möglichkeit, einen Gefahrenbereich um den TCP zu legen. Dies spielt mit den Sicherheitsebenen zusammen, damit der
+		Roboter weiß, wie groß der Effektor ist und wann er durch die verbotene Ebene treten würde.<br></p>
 		<h2>Home-Position</h2>
 		<p>Jeder Roboter hat eine Home-Position die er immer anfahren können muss. Diese ist normalerweise 
 		gleich mit der Null-Position, welche unveränderlich ist (Gelenke alle bei 0°).<br>
 		Jedoch kann man die Home-Position als Benutzer neu definieren, falls die absolute Null-Position
-		nicht mehr anfahrbar wäre, da es sonst zu einer Kollision kommen würde.<br>
-		</p>		
+		nicht mehr anfahrbar wäre, da es sonst zu einer Kollision kommen würde.</p>
+		<img src="images/home1.png" width="55"></img><br>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
