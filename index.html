@@ -58,6 +58,9 @@
 				<div class="col-md-4"><p><button class="chapter4_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">TCP und Ebenen</button></p></div>
 				<div class="col-md-4"><p><button class="chapter14_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Flansch</button></p></div>
 			</div>
+			<div class="row">
+			<div class="col-md-4"><p><button class="chapter21_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Bin-Picking</button></p></div>
+			</div>
 			
 			<hr></hr>
 			<h2>Experte:</h2>
@@ -89,7 +92,8 @@
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter20_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Wartung</button></p></div>
 				<div class="col-md-4"><p><button class="chapter28_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Dual-Kalibrierung</button></p></div>
-				<div class="col-md-4"><p><button class="chapter21_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">IMM-Programmierung*</button></p></div>
+				<div class="col-md-4"><p><button class="chapter26_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">LED Indikatoren</button></p></div>
+				
 			</div>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter22_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">OEM Anschluss</button></p></div>
@@ -98,7 +102,6 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter25_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Support-Log Reader </button></p></div>
-				<div class="col-md-4"><p><button class="chapter26_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">LED Indikatoren</button></p></div>
 				<div class="col-md-4"><p><button class="chapter32_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Software Update</button></p></div>
 			</div>
 			<br>
@@ -736,8 +739,53 @@
 	</div>
 	
 	<div id="chapter_21" class="jumbotron chapter_21" hidden>
-        <h1>IMM-Programmierung</h1>
-        <p>•
+        <h1>Bin-Picking</h1>
+        <p>Die Benutzeroberfläche von Keyence-Bin-picking ist hier abgebildet.<br>
+		<img src="images/binpick1.png" width="600"></img><br>
+		Zuerst muss die Kamera eingestellt werden. 
+		Dazu auf den Reiter Kamera einstellen klicken und im Bereich Kamerakonfiguration das Modell gewünschte Modell Auswählen. 
+		<br>Anschließend wird der Bereich des Autotuning eingestellt. 
+		Es muss eine Kiste mit den gewünschten Teilen unterhalb der Kamera aufgestellt werden und den 
+		Bereich so einstellen, dass nur die Kiste abgedeckt wird.
+		<img src="images/binpick2.png"></img><br>
+		Im nächsten Schritt wird der Roboter verbunden. <br>Im Reiter Roboter verbinden wird der gewünschte Roboter ausgewählt. Um eine Verbindung herstellen zu können müssen folgende Einstellungen am Roboter verändert werden:<br>
+		1. Setzten Sie unter Roboter Einstellung der IP-Adresse auf Statische Adresse. Geben sie eine neue IP-Adresse 198.168.0.1 ein.<br>
+		2. Laden Sie das neueste Programm KeyenceRobotVisionSetup.urp auf den Roboter. Diese erhalten Sie von Keyence.<br>
+		3. Nun geben Sie in dem Skriptcode die Adresse des 3d Vision 198.168.0.10 ein.
+		CUR_SetupCamera(“Cam1”,”192.168.0.10”,8500)<br>
+		4. Führen sie Nun das Programm am Roboter aus.<br>
+		<img src="images/binpick3.png"></img><br>
+		Jetzt kann die Roboterverbindung getestet werden. <br>Zum Schluss werden die Robotermodel Daten 
+		noch hochgeladen. Diese erhalten Sie ebenfalls von Keyence. <br><br>
+		Im nächsten Reiter Kalibrierung muss der Roboter mit der Kamera kalibriert werden. 
+		Hierzu auf hinzufügen klicken um eine neue Kalibrierung zu erstellen und es erscheint wie auf dem Bild. 
+		<br><img src="images/binpick4.png"></img><br>Nun muss das Kalibrierobjekt am Roboter angebracht werden. 
+		Anschließen die Hand des Roboters in die Mitte des Kamerasichtfeldes fahren und 
+		die Koordinaten Registrieren. Im nächsten Schritt Erkennung Werkzeugeinst. 
+		Wird ein Referenzbild vom Kalibierobjekt erstellt. <br>Im Schritt Kalibrierung werden 
+		die Abstände der Referenzpunkte eingestellt. Dabei ist zu beachten, dass diese möglichst 
+		weit auseinander liegen. <br>Nun auf Ausführen klicken und der Roboter fährt automatisch die 
+		Referenzpunkte ab. Im Schritt Berechnung Werkzeugmitte werden statt Punkte Gradzahlen eingegeben. 
+		Auch hier wieder auf Ausführen Klicken und der Roboter fährt automatisch die Punkte ab.<br>
+		<img src="images/binpick5.png"></img><br><br>
+		Im Reiter 3D Suche wird das Suchmodel und die Kiste registriert. <br><br>
+		Im 1. Schritt Modell registrieren ein Referenzmodel erstellt. Hier können die CAD-Daten hochgeladen oder ein Bild von dem Model aufgenommen werden. Einfach Hinzufügen klicken und die gewünschte Methode auswählen. Soll ein Bild aufgenommen werden, einfach das Model auf eine ebene Platte legen und ein Bild aufnehmen. Die Einstellungen müssen so sein, dass nur noch das Model zusehen ist.
+		<img src="images/binpick6.png"></img><br>
+		Im 2. Schritt Kiste definieren wird die Kiste eingestellt. Dazu auf bearbeiten klicken und ein Bild der Leeren Kiste aufnehmen. Nun werden die Kanten der Kiste definiert. Dazu jeweils 2 Punkte an den Kanten oben, rechts, unten und links angeben. <br>
+		<br>Im 3. Schritt Sucheinstellungen, wie im Bild rechts, muss die Min. Übereinstimmung unter dem Schwankungsbereich der Übereinstimmung liegen. Ist der Wert zu hoch werden keine Teile erkannt. <br>Anschließend auf die 2 Pfeile nach rechts klicken. In der Erkennungsreihenfolge 
+		Z> Überein.%: absteigend einstellen. Dadurch werden immer die obersten Teile genommen.<br>
+		<img src="images/binpick7.png"></img><br><br>
+		Im Reiter Bahnplanung werden alle Einstellungen rund um des Greifen und Ablegen des Models definiert. Dazu wird im 1. Schritt Arbeitsbereich das Werkstück Modell erstellt. Durch auswählen des Bausteins 3D Suche, Werkstückmodell erstellen und anschließend Modell generieren wird aus dem Referenzbild ein 3D Referenzmodell. Danach werden die Kalibrierungsdaten geladen. Hier die zuvor abgespeicherte Kalibrierung verwenden. Anschließend noch den Greifermodell erstellen. Hierzu werden die CAD-Daten des Greifers hochgeladen und die Backen selbst modelliert. Hier ist zu beachten den Werkzeugmittelpunkt, also den Tool Center Point in die Mitter der Backen zu setzten. Nach der Greifererstellung können noch mögliche Layout Daten erstellt werden, wie z.b. Wände oder Zäune der Roboteranlage.
+		Im 2. Schritt Greiferpositionen registrieren wird, wie links im Bild, das Greifermodell so positioniert, wie er in Real das Bauteil greifen würde. Hier ist zu beachten, dass der Greifer nicht mit dem Modell kollidiert.
+		<img src="images/binpick8.png"></img><br>
+		Im 3. Schritt Roboterbahneinstellungen müssen nur noch die Startposition, die Position über der Kiste und die Ablageposition definiert werden.<br>
+		<img src="images/binpick9.png"></img><br>
+		Im 4. Schritt Überprüfung wird die Maximale Werkstücküberlappung und den Kollisionspuffer mit der Kiste eingegeben. <br><br>
+		Nun ist das Programm fertig und kann ausprobiert werden. Dazu lädt man das 
+		OperationProgrammpp.urp auf den Roboter. Diese erhält man ebenfalls von Keyence. 
+		Hier müssen dann noch die Greiferbewegungen auf bzw. zu eingefügt werden. 
+		Anschließend im 3D Robot Vision auf Run drücken und im Roboter Programm auf ausführen.<br>
+		Nun bewegt sich der Roboter automatisch und nimmt ein Bauteil aus der Kiste.
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
