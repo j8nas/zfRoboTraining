@@ -26,7 +26,7 @@
     <!--chapter_32 ist das aktuellste -->
 	<div id="start_screen" class="jumbotron start_screen">
 			<h1>Willkommen zur ZF-Robotik</h1>
-			<p>Bitte vorher die Schulung auf der Universal Robot Seite machen.<br></p>
+			<p>Bitte vorher die Schulung auf der Universal-Robot Webseite machen.<br></p>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter31_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Leichtbauroboter</button></p></div>
 				<div class="col-md-4"><p> <button class="startquiz btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Quiz</button></p></div>
@@ -46,7 +46,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-md-4"><p><button class="chapter13_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Polyscope*</button></p></div>
+				<div class="col-md-4"><p><button class="chapter13_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Polyscope</button></p></div>
 				<div class="col-md-4"><p><button class="chapter5_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Bausteine im GUI</button></p></div>
 				<div class="col-md-4"><p><button class="chapter29_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Greifer</button></p></div>
 			</div>
@@ -75,7 +75,7 @@
 				<div class="col-md-4"><p><button class="chapter11_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Normen</button></p></div>
 			</div>
 			<div class="row">
-				<div class="col-md-4"><p><button class="chapter30_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Sicherheitskonfiguration*</button></p></div>
+				<div class="col-md-4"><p><button class="chapter30_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Sicherheitskonfiguration</button></p></div>
 				<div class="col-md-4"><p><button class="chapter33_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">CE-Kennzeichnung*</button></p></div>
 			</div>
 			
@@ -367,6 +367,54 @@
 		Hier kann alles eingestellt werden. Sicherheitsparameter, Roboterprogrammierung, Netzwerkeinstellungen und IO-Belegungen.<br>
 		Mittels Nodes (siehe "Bausteine im GUI") kann man einen Programmbaum füllen und somit ein Ablauf für den Roboter programmieren.<br>
 		Das Installieren von URCaps erleichtert die Benutzung und die Kommunikation zwischen dem Roboter und anderen Geräten. Jeder Hersteller hat für seine Geräte eigene URCaps.<br>
+		<br>A : Kopfzeile mit Tabs/Symbolen, über die Sie interaktive Bildschirme aufrufen können.<br>
+		B : Fußzeile mit Schaltflächen für Ihre geladenen Programme.<br>
+		C : Bildschirm mit Feldern zur Manipulation und Überwachung von Roboteraktionen.<br>
+		<image src="images/poly1.png"></image><br>
+		<br><b>Symbole der Kopfzeile:</b><br>
+		<image src="images/kopf1.png"></image><b>Betrieb</b> ist eine unkomplizierte Möglichkeit, den Roboter anhand vordefinierter Programme einzusetzen.<br>
+		<image src="images/kopf2.png"></image><b>Programm</b> erstellt und/oder ändert Roboterprogramme.<br>
+		<image src="images/kopf3.png"></image><b>Installation</b> konfiguriert die Roboterarm-Einstellungen und externe Vorrichtungen, z. B. die Montage und Sicherheit.<br>
+		<image src="images/kopf4.png"></image><b>Move</b> steuert und/oder regelt die Roboterbewegung.<br>
+		<image src="images/kopf5.png"></image><b>E/A</b> dient zum Überwachen und Steuern von Eingangs-/Ausgangssignalen
+		in Echtzeit, die zu und von der Control-Box übertragen werden.<br>
+		<image src="images/kopf6.png"></image><b>Protokoll</b> enthält Angaben über den intakten Status des Roboters sowie
+		Warn- oder Fehlermeldungen.<br>
+		Programm- und InstallationsManager für die Auswahl und Anzeige aktiver Programme und Installationen. <br>Hinweis: Dateipfad, Neu, Öffnen und Speichern sind Befehle im
+		Programm- und Installations-Manager.<br>
+		<image src="images/kopf8.png"></image><b>Neu...</b> dient zum Erstellen eines neuen Programms oder einer Installation.<br>
+		<image src="images/kopf9.png"></image><b>Öffnen...</b> dient zum Öffnen eines zuvor erstellten und gespeicherten Programms bzw. einer Installation.<br>
+		<image src="images/kopf10.png"></image><b>Speichern...</b> dient zum Speichern eines Programms, einer Installation
+		oder beider Komponenten gleichzeitig.<br>
+		Hinweis: Die Symbole für den automatischen und den manuellen Modus erscheinen nur dann in
+		der Kopfzeile, wenn Sie ein Passwort für einen Bedienermodus festlegen.<br>
+		<image src="images/kopf11.png"></image><b>Automatik</b> gibt an, dass im Roboter eine Automatikumgebung geladen ist.<br>
+		Tippen Sie darauf, um auf manuelle Umgebung umzuschalten.<br>
+		<image src="images/kopf12.png"></image><b>Manueller</b> gibt an, dass im Roboter eine manuelle Umgebung geladen ist.<br>
+		Tippen Sie darauf, um auf Automatik-Umgebung umzuschalten.<br>
+		Hinweis: Die Symbole für Lokal- und Fernsteuer-Modus sind nur aktiv, wenn die Fernsteuerung
+		aktiviert ist.<br>
+		<image src="images/kopf13.png"></image><b>Lokal-</b> gibt an, dass der Roboter lokal gesteuert werden kann. Tippen Sie
+		darauf, um auf Fernsteuerung umzuschalten. Für den Zugriff auf das Symbol
+		Lokal-Modus muss ein Passwort eingerichtet werden.<br>
+		<image src="images/kopf14.png"></image><b>Fernsteuer-</b> gibt an, dass der Roboter von einer entfernten Position aus
+		gesteuert werden kann. Tippen Sie darauf, um auf lokale Steuerung umzuschalten.<br>
+		<image src="images/kopf15.png"></image><b>Sicherheitsprüfsumme</b> zeigt die aktive Sicherheitskonfiguration an.<br>
+		<image src="images/kopf16.png"></image><b>„Hamburger-Menü”</b> dient zum Aufrufen von PolyScope-Hilfe, Infos und
+		Einstellungen.<br><br>
+		<b>Symbole der Fußzeile:</b><br>
+		<image src="images/fuß1.png"></image><b>Initialisieren</b> handhabt den Status des Roboters. Wenn ROT, wird der Roboter durch Drücken in Betrieb gesetzt.<br>
+		<image src="images/fuß2.png"></image>Der <b>Geschwindigkeitsregler</b> zeigt unter Einbeziehung der Sicherheitseinstellungen die relative Geschwindigkeit in Echtzeit an, mit der sich der Roboterarm bewegt.
+		<image src="images/fuß3.png"></image><br>Mit der Schaltfläche <b>Simulation</b> wird die Programmausführung zwischen dem Simulationsmodus und dem echten 
+		Roboter umgeschaltet. Bei Ausführung im Simulationsmodus bewegt sich der Roboterarm
+		nicht. Daher kann der Roboter bei einer Kollision weder sich selbst noch Geräte in
+		der Nähe beschädigen. Wenn Sie sich nicht sicher sind, wie sich der Roboterarm
+		verhalten wird, testen Sie Ihre Programme im Simulationsmodus.<br>
+		<image src="images/fuß4.png"></image><b>Manuelle hohe Geschwindigkeit</b> erlaubt ein temporäres Überschreiten des Grenzwerts von 250 mm/s. 
+		Diese Totmann-Funktion ist nur im manuellen Modus bei Konfiguration eines dreistufigen Zustimmschalters verfügbar.<br>
+		<image src="images/fuß5.png"></image><b>Abspielen</b> startet das aktuell geladene Roboterprogramm.<br>
+		<image src="images/fuß6.png"></image><b>Schritt</b> dient zur Einzelschrittausführung eines Programms.<br>
+		<image src="images/fuß7.png"></image><b>Stopp</b> hält das aktuell geladene Roboterprogramm an.
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -978,14 +1026,38 @@
         <h1>Sicherheitskonfiguration</h1>
 		<p>Viele Abschnitte in diesem Bereich benötigen ein Passwort um bearbeitet zu werden.</p><br>
 		<h2>Roboter Limits</h2>
-		<p>
-		
-		</p>
+		<p>Mit Robotergrenzen können Sie Roboterbewegungen generell einschränken. 
+		Im Bildschirm Robotergrenzen gibt es zwei Konfigurationsmöglichkeiten: 
+		Werksvorgaben und Anwendungsspezifisch<br><br>
+		1. Unter Werksvorgaben können Sie mit dem Schieberegler eine vordefinierte Sicherheitseinstellung 
+		auswählen. In der Tabelle werden die jeweils entsprechenden Werte angezeigt, die
+		von Stark eingeschränkt zu Schwach eingeschränkt reichen.<br>
+		Hinweis: Die Werte sind nur Vorschläge und kein Ersatz für eine umfassende Risikobewertung.
+		<img src="images/limit1.png"></img><br>
+		Unter Anwendungsspezifisch können Sie Grenzwerte für die Funktionsweise des Roboters
+		festlegen und die damit verbundene Toleranz im Auge behalten.<br>
+		Leistung begrenzt die maximale mechanische Leistungskraft, die vom Roboter im Arbeitsumfeld aufgebracht wird.<br>
+		Hinweis: Dieser Grenzwert berücksichtigt die Nutzlast als Teil des Roboters und nicht
+		des Arbeitsumfelds.<br><br>
+		<b>Drehmoment</b> begrenzt das maximale Drehmoment des Roboters.<br>
+		<b>Nachlaufzeit</b> begrenzt die maximale Dauer, die der Roboter bis zum Stillstand benötigt, z.B. bei einem Not-Aus.<br>
+		<b>Nachlaufweg</b> begrenzt die maximale Strecke, die das Roboterwerkzeug oder der Ellbogen
+		beim Anhalten zurücklegen kann.<br>
+		<b>Werkzeuggeschwindigkeit</b> begrenzt die Höchstgeschwindigkeit des Roboterwerkzeugs.<br>
+		<b>Werkzeugmoment</b> begrenzt die maximale Kraft, die vom Roboterwerkzeug in Klemmsituationen aufgebracht wird.<br>
+		<b>Ellbogengeschwindigkeit</b> begrenzt die Höchstgeschwindigkeit des Roboterwerkzeugs.<br>
+		<b>Ellbogenmoment</b> begrenzt die maximale Kraft, die vom Ellbogen auf die Arbeitsumgebung
+		ausgeübt wird.<br>
+		<img src="images/limit2.png"></img></p>
 		<h2>Gelenkgrenzen</h2>
-		<p>
-		
-		</p>
-        <h2>Ebenen</h2>
+		<p>Jedes Gelenk hat einen festen Bereich, in dem es sich bewegen kann. 
+		Jedoch will man eventuell nicht, dass ein Gelenk über eine gewisse Gradzahl hinaus bewegt wird.<br>
+		Das hat meist den Hintergrund, dass Kollision verhindert werden soll. Es kann auch die Möglichkeit, in eine Singularität zu fahren, verhindern.
+        1. Unter maximaler Geschwindigkeit legen Sie die maximale Winkelgeschwindigkeit für jedes Gelenk fest.<br>
+		2. Unter Positionsbereich legen Sie den Positionsbereich für jedes Gelenk fest. Die Eingabefelder für den Reduzierten Modus sind hier deaktiviert, wenn keine Sicherheitsebene bzw.
+		kein konfigurierbarer Eingang zu dessen Auslösung vorhanden ist. Diese Begrenzung ermöglicht eine sicherheitsbezogene weiche Achsenbegrenzung des Roboters.<br>
+		</p><img src="images/limit3.png"></img>
+		<h2>Sicherheitsebenen</h2>
 		<p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
 		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
 		  Sicherheitsebenen stellen eine 'Barriere' dar, die der Roboter nicht durchstoßen soll. Dies kann man auf einige Arten festlegen.<br>
@@ -993,18 +1065,57 @@
 		  • "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
 		  • "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
 		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br>
-		  <img src="images/ebenen.png"  width="600"></img></p>
-		<h2>Werkzeug</h2>
-		<p>Der TCP muss an das jeweilige Werkzeug angepasst werden. Das ist unter der Allgemeinen Konfiguration möglich.<br>
-		Doch hier lässt sich der absolute TCP verschieben, wenn für immer etwas daran befestigt ist. Dazu gibt es auch 
-		die Möglichkeit, einen Gefahrenbereich um den TCP zu legen. Dies spielt mit den Sicherheitsebenen zusammen, damit der
-		Roboter weiß, wie groß der Effektor ist und wann er durch die verbotene Ebene treten würde.<br></p>
+		  <img src="images/ebenen.png"  width="600"></img><br>
+		  <b>Sicherheitsebene konfigurieren:</b><br>
+		  1. Klicken Sie in der PolyScope Kopfzeile auf Installation.<br>
+		2. Klicken Sie im Seitenmenü links im Bildschirm auf Sicherheit und wählen Sie Ebenen.<br>
+		3. Klicken oben rechts im Feld Ebenen auf Ebene hinzufügen.<br>
+		4. Legen Sie unten rechts im Feld Eigenschaften einen Namen, die Kopierfunktion und Einschränkungen fest.<br><br>
+		Hinweis: Unter Kopierfunktion können nur Undefiniert und Basis ausgewählt werden.<br> 
+		Eine konfigurierte Sicherheitsebene können Sie durch Auswahl von Undefiniert zurücksetzen.<br>
+		<img src="images/sebene1.png"></img></p>
+		<h2>Werkzeugposition</h2>
+		<p>Der Bildschirm Werkzeugposition ermöglicht eine kontrollierte Beschränkung von Werkzeugen
+		und/oder Zubehörteilen, die am Ende des Roboterarms angebaut sind.<br><br>
+		Unter <b>Roboter</b> können Sie Ihre Änderungen anschaulich begutachten.<br>
+		Unter <b>Werkzeug</b> können Sie bis zu zwei Werkzeuge definieren und konfigurieren.<br>
+		<b>Werkzeug_1</b> ist das Standardwerkzeug, das mit den Werten x=0.0, y= 0.0, z=0.0 und dem Radius=0.0 definiert ist. Diese Werte stehen für den Werkzeugflansch des Roboters.
+		Hinweis:<br>
+		• Unter TCP kopieren können Sie auch <b>Werkzeugflansch</b> auswählen und die Werkzeugwerte wieder auf 0 setzen.<br>
+		• Am Werkzeugflansch ist eine Standardkugel definiert.<br>
+		<img src="images/werkzeug1.png"></img><br><br>
+		<b>Radius</b> zum Ändern des Radius des Werkzeugraums. Der Radius wird bei der Verwendung von
+		Sicherheitsebenen berücksichtigt. Durchquert ein Punkt in dem Bereich eine Auslöseebene
+		für den reduzierten Modus, schaltet der Roboter aufreduzierten Modus um. Das Sicherheitssystem verhindert, dass eine Sicherheitsebene von einem Punkt in dem Bereich durchquert
+		wird.
+		<b>Position</b> zum Ändern der Lage des Werkzeugs relativ zum Werkzeugflansch des Roboters. Die
+		Position wird bei den Sicherheitsfunktionen Werkzeuggeschwindigkeit, Werkzeugmoment,
+		Nachlaufweg und Sicherheitsebenen berücksichtigt.
+		<br></p>
+		<h2>Werkzeugrichtung</h2>
+		<p>Der Bildschirm Werkzeugrichtung kann verwendet werden, um den Winkel zu begrenzen, in dessen Richtung das Werkzeug zeigt. Die Begrenzung wird durch einen Konus definiert, der relativ
+		zur Roboterarm-Basis eine fixe Orientierung aufweist. Bei den Bewegungsabläufen des Roboterarms wird die Richtung des Werkzeugs eingeschränkt, damit es den definierten konischen Bereich nicht überschreitet. Die Standardrichtung des Werkzeugs liegt auf der Z-Achse des WerkzeugAusgangsflanschs. Durch Angabe von Neige- und Schwenkwinkeln kann diese geändert werden.
+		Vor dem Konfigurieren der Begrenzung müssen Sie einen Punkt oder eine Ebene in der Roboterinstallation definieren (siehe 16.3). Die Funktion kann anschließend kopiert und ihre Z-Achse als Mitte des Begrenzungskonus verwendet werden.<br>
+		<br><img src="images/werkzeug2.png"></img><br>
+		Die Begrenzung der Werkzeugrichtung besitzt drei konfigurierbare Eigenschaften:<br>
+		<br>1. <b>Konusmitte:</b> Zur Definition der Konusmitte können Sie im Dropdown-Menü eine Punkt- oder
+		Ebenenfunktion auswählen. Die Z-Achse der gewählten Funktion wird als Richtung für die
+		Zentrierung des Konus verwendet.<br>
+		2. <b>Konuswinkel:</b> Sie können festlegen, um wie viele Grad der Roboter von der Mitte abweichen
+		darf.<br>
+		Deaktivierte Werkzeugrichtungsbegrenzung ist nie aktiv
+		<br><b>Normale Werkzeugrichtungsbegrenzung</b> ist nur aktiv, wenn sich das Sicherheitssystem
+		im normalen Modus befindet.<br>
+		<b>Reduzierte Werkzeugrichtungsbegrenzung</b> ist nur aktiv, wenn sich das Sicherheitssystem
+		im reduzierten Modus befindet.<br>
+		<b>Normale & Reduzierte Werkzeugrichtungsbegrenzung</b> ist aktiv, wenn sich das Sicherheitssystem im Normalen Modus oder im Reduzierten Modus befindet.
+		</p>
 		<h2>Home-Position</h2>
 		<p>Jeder Roboter hat eine Home-Position die er immer anfahren können muss. Diese ist normalerweise 
 		gleich mit der Null-Position, welche unveränderlich ist (Gelenke alle bei 0°).<br>
 		Jedoch kann man die Home-Position als Benutzer neu definieren, falls die absolute Null-Position
 		nicht mehr anfahrbar wäre, da es sonst zu einer Kollision kommen würde.</p>
-		<img src="images/home1.png" width="55"></img><br>
+		<img src="images/safehome.png"></img><img src="images/home1.png" width="55"></img><br>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
