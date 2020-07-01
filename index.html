@@ -14,7 +14,7 @@
 
 <body>
 	<div class="container">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" hidden>
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">ZF-Robotik</a>
@@ -23,7 +23,7 @@
 			</div>
 		</nav>
 
-    <!--chapter_32 ist das aktuellste -->
+    <!--chapter_33 ist das aktuellste :: URCap schreiben 34; -->
 	<div id="start_screen" class="jumbotron start_screen">
 			<h1>Willkommen zur ZF-Robotik</h1>
 			<p>Bitte vorher die Schulung auf der Universal-Robot Webseite machen.<br></p>
@@ -35,7 +35,7 @@
 			<hr></hr>
 			<h2>Grundlagen:</h2>
 			<div class="row">
-				<div class="col-md-4"><p><button class="chapter1_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Rotationsmatrix*</button></p></div>
+				<div class="col-md-4"><p><button class="chapter1_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button" >Rotationsmatrix*</button></p></div>
 				<div class="col-md-4"><p><button class="chapter2_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Rechte Hand Regel</button></p></div>
 				<div class="col-md-4"><p><button class="chapter3_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Koordinatensystem</button></p></div>
 			</div>
@@ -67,7 +67,8 @@
 			<h2>Experte:</h2>
 			<div class="row">
 				<div class="col-md-4"><p><button class="chapter7_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kamera-Kalibrierung*</button></p></div>
-				<div class="col-md-4"><p><button class="chapter27_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kommunikationsprotokolle*</button></p></div>
+				<div class="col-md-4"><p><button class="chapter27_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">IO-Link</button></p></div>
+				<div class="col-md-4"><p><button class="chapter34_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">URCap schreiben*</button></p></div>
 			</div>
 		
 			<hr></hr>
@@ -319,10 +320,10 @@
 		<b>3.</b><br>Ein Roboter muss seine Existenz beschützen, solange dieser Schutz nicht mit Regel eins oder zwei kollidiert.<br><br>
 		Man beachte, dass diese Gesetze hierarchisch aufgebaut sind. Sie bilden den Hintergrund, in einem Science-Fiction-Film von 1950
 		und prägen seither die Auffassung, was und wie ein Roboter sein sollte. 
-		Die von Asimov beschriebenen Roboter sind in ihrem Verhalten und ihren Entscheidungen an diese Gesetze gebunden.<br><br>
-		<center><img src="images/asimov.jpg"></img></center><br>
-		Roboter im militärischen Bereich (automatische Waffensysteme, Smart Bombs, Drohnen, Kampfroboter) sind davon ausgenommen., da sie einen anderen
-		Zweck verfolgen.</p>
+		Die von Asimov beschriebenen Roboter sind in ihrem Verhalten und ihren Entscheidungen an diese Gesetze gebunden.<br>
+		<center><img src="images/asimov.jpg"></img></center></p>
+		Roboter im militärischen Bereich (automatische Waffensysteme, Smart Bombs, Drohnen, Kampfroboter) sind davon ausgenommen, da sie einen anderen
+		Zweck verfolgen.
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -365,7 +366,6 @@
 		das auf der Basis von homogenen Matrizen und der sogenannten Denavit-Hartenberg-Konvention (DH-Konvention) 
 		die Überführung von Ortskoordinatensystemen (OKS) innerhalb von kinematischen Ketten beschreibt. Sie erleichtert so 
 		vor allem die Berechnung der direkten Kinematik (Vorwärtskinematik) und gilt hierbei mittlerweile als das Standardverfahren, insbesondere im Bereich Robotik.<br>
-		
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -378,12 +378,12 @@
 		Hier kann alles eingestellt werden. Sicherheitsparameter, Roboterprogrammierung, Netzwerkeinstellungen und IO-Belegungen.<br>
 		Mittels Nodes (siehe "Bausteine im GUI") kann man einen Programmbaum füllen und somit ein Ablauf für den Roboter programmieren.<br>
 		Das Installieren von URCaps erleichtert die Benutzung und die Kommunikation zwischen dem Roboter und anderen Geräten. Jeder Hersteller hat für seine Geräte eigene URCaps.<br>
-		<br>A : Kopfzeile mit Tabs/Symbolen, über die Sie interaktive Bildschirme aufrufen können.<br>
-		B : Fußzeile mit Schaltflächen für Ihre geladenen Programme.<br>
-		C : Bildschirm mit Feldern zur Manipulation und Überwachung von Roboteraktionen.<br>
+		<br><b>A</b> : Kopfzeile mit Tabs/Symbolen, über die Sie interaktive Bildschirme aufrufen können.<br>
+		<b>B</b> : Fußzeile mit Schaltflächen für Ihre geladenen Programme.<br>
+		<b>C</b> : Bildschirm mit Feldern zur Manipulation und Überwachung von Roboteraktionen.<br>
 		<image src="images/poly1.png"></image><br>
-		<br><b>Symbole der Kopfzeile:</b><br>
-		<image src="images/kopf1.png"></image><b>Betrieb</b> ist eine unkomplizierte Möglichkeit, den Roboter anhand vordefinierter Programme einzusetzen.<br>
+		<center><h2>Symbole der Kopfzeile</h2></center><br>
+		<img src="images/kopf1.png"></img><b>Betrieb</b> ist eine unkomplizierte Möglichkeit, den Roboter anhand vordefinierter Programme einzusetzen.<br>
 		<image src="images/kopf2.png"></image><b>Programm</b> erstellt und/oder ändert Roboterprogramme.<br>
 		<image src="images/kopf3.png"></image><b>Installation</b> konfiguriert die Roboterarm-Einstellungen und externe Vorrichtungen, z. B. die Montage und Sicherheit.<br>
 		<image src="images/kopf4.png"></image><b>Move</b> steuert und/oder regelt die Roboterbewegung.<br>
@@ -413,9 +413,9 @@
 		<image src="images/kopf15.png"></image><b>Sicherheitsprüfsumme</b> zeigt die aktive Sicherheitskonfiguration an.<br>
 		<image src="images/kopf16.png"></image><b>„Hamburger-Menü”</b> dient zum Aufrufen von PolyScope-Hilfe, Infos und
 		Einstellungen.<br><br>
-		<b>Symbole der Fußzeile:</b><br>
+		<center><h2>Symbole der Fußzeile</h2></center><br>
 		<image src="images/fuß1.png"></image><b>Initialisieren</b> handhabt den Status des Roboters. Wenn ROT, wird der Roboter durch Drücken in Betrieb gesetzt.<br>
-		<image src="images/fuß2.png"></image>Der <b>Geschwindigkeitsregler</b> zeigt unter Einbeziehung der Sicherheitseinstellungen die relative Geschwindigkeit in Echtzeit an, mit der sich der Roboterarm bewegt.
+		<image src="images/fuß2.png"></image><br>Der <b>Geschwindigkeitsregler</b> zeigt unter Einbeziehung der Sicherheitseinstellungen die relative Geschwindigkeit in Echtzeit an, mit der sich der Roboterarm bewegt.<br>
 		<image src="images/fuß3.png"></image><br>Mit der Schaltfläche <b>Simulation</b> wird die Programmausführung zwischen dem Simulationsmodus und dem echten 
 		Roboter umgeschaltet. Bei Ausführung im Simulationsmodus bewegt sich der Roboterarm
 		nicht. Daher kann der Roboter bei einer Kollision weder sich selbst noch Geräte in
@@ -425,9 +425,8 @@
 		Diese Totmann-Funktion ist nur im manuellen Modus bei Konfiguration eines dreistufigen Zustimmschalters verfügbar.<br>
 		<image src="images/fuß5.png"></image><b>Abspielen</b> startet das aktuell geladene Roboterprogramm.<br>
 		<image src="images/fuß6.png"></image><b>Schritt</b> dient zur Einzelschrittausführung eines Programms.<br>
-		<image src="images/fuß7.png"></image><b>Stopp</b> hält das aktuell geladene Roboterprogramm an.
-		</p>
-        </br></br><hr></hr>
+		<image src="images/fuß7.png"></image><b>Stopp</b> hält das aktuell geladene Roboterprogramm an.<p>
+        </br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
@@ -458,7 +457,7 @@
 		In einem URCap kann man alles programmieren, das man sich ausdenken kann. Dieses komplexe Tool bietet unendlich viele Möglichkeiten, 
 		Probleme zu vereinfachen oder sogar Bedienoberflächen für Geräte herzustellen.<br><br>
 		Viele Hersteller liefern ein URCap mit ihrem Produkt mit (Kamera,Greifer,..) um die Einrichtung und Bedienung zu erleichtern.<br>
-		Das URCap läd man auf einen USB-Stick, steckt diesen an das Teach-Pendant an und installiert es in den Robotereinstellungen.<br></p>
+		Das URCap läd man auf einen USB-Stick, steckt diesen an das Teach-Pendant an und installiert es in den <b>Einstellungen</b> des Robots.<br></p>
 		<img src="images/urcaps1.png" width="600"></img>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -896,13 +895,13 @@
 		Das Programm ist folgendermaßen aufgebaut und zu lesen.<br><br>
 		1. Filterauswahl<br>
 		2. Tool bar; Lade Log Dateien, Export Errorcodes, Sprache ändern Textsuche / Fehlersuche<br>
-		4. Log Start Info Anzeige; Wird bei jedem Roboter Start erstellt. <br>
-		5. Text hervorgehoben bei Klick. Gibt mehr Info. <br>
-		6. PolyScope Zeit <br>
-		7. Anzeige von Infos aus ”safety, PolyScope, etc.” <br>
+		4. Log Start Info Anzeige; Wird bei jedem Roboter Start erstellt.<br>
+		5. Text hervorgehoben bei Klick. Gibt mehr Info.<br>
+		6. PolyScope Zeit<br>
+		7. Anzeige von Infos aus ”safety, PolyScope, etc.”<br>
 		8. Nachricht; zeigt Text und Fehlercode an<br>
 		9. Log Einträge gesamt<br>
-		10. Einklappen oder Ausklappen der Infozeile (Punkt 4) <br><br>
+		10. Einklappen oder Ausklappen der Infozeile (Punkt 4)<br><br>
 		<image src="images/support_log.png"></image><br><br>
 		Errorcodes sind bis C271 Roboter Generationen übergreifend.<br>
 		PSU = Power Supply<br>
@@ -942,41 +941,57 @@
 	</div>
 	
 	<div id="chapter_27" class="jumbotron chapter_27" hidden>
-        <h1>Kommunikationsprotokolle</h1>
-        <p>Zur Kommunikation zwischen dem Roboter und dem jeweiligen Gerät, gibt es einige Verbindungsarten. 
-		Die meist angewendeten sind IO-Link, Socket-Connection per Skript, IP und URCaps. 
-		Ein Teilnehmer übernimmt meist die Server-Rolle, da Peer-to-Peer nicht wirklich in der 
-		Industrieumgebung benutzt wird. <br>Im Folgenden werden Möglichkeiten der Kommunikation gezeigt.<br><br>
-		<b>1. Socket-Connection per Skript-Baustein:</b><br>
-		Hier werden Ports auf dem Robotercontroller für "in" und "out" geöffnet. Darüber sendet man dann
-		ein Triggersignal an das gewünschte Gerät. Dies sollte dann den Befehl ausführen und eine Bestätigung zurücksenden,
-		ob es funktioniert hat oder einen Fehler geworfen hat.<br>
-		Auf diese Art wird der Roboter zum "Server".<br>
-		Auf dem Roboter wird hierfür ein Skript-Baustein benutzt mit folgenden Zeilen:<br>
-		<code>socket_1 = socket_open(IP, PORT, socketname = s_out)<br>
-		socket_2 = socket_open(IP, PORT, socketname = s_in)<br>
-		socket_send_string ("TRG", socketname = s_out)<br>
-		…<br>socket_close (socketname = s_in)<br>socket_close (socketname = s_out)</code><br>
-		<br><b>2. Ethernet/IP:</b><br>
-		<img src="images/EthernetIP.png" width="750px" height="450px"></img><br>
-		<br><b>3. URCaps:</b><br>
-		Viele Geräte haben ein eigenes URCap, welches die komplette Bedienung erleichtert. 
-		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurechtgelegt ist.
-		Wenn ein URCaps vorliegt, unbedingt für einen reibungslosen Aufbau und Anschluss benutzen.<br>
-		<br><b>4. IO-Link:</b><br>
-		Dies ist die Anbindungsstelle für intelligente Sensoren und Aktoren an ein Automatisierungssystem. 
+        <h1>IO-Link</h1>
+        <p>Dies ist die Anbindungsstelle für intelligente Sensoren und Aktoren an ein Automatisierungssystem. 
 		Es umfasst die elektrischen Anschlussdaten und auch das digitale Kommunikationsprotokoll. 
-		Die ganze Steuerung findet über den IO-Link-Master statt, der das System überblickt.<br>
-		<br><b>5. ModBUS:</b><br>
-		<img src="images/Modbus.png" width="750px" height="450px"></img><br>
-		<br>
-		<br><b>6. Profinet:</b><br>
-		<img src="images/Profinet.png" width="750px" height="450px"></img><br>
-		</p>
-        </br></br><hr></hr>
+		Die ganze Steuerung findet über den IO-Link-Master statt, der das System überblickt.<br><br>
+		Um einen Datentransfer mit einem IO-Link Gerät aufzubauen, ist es zunächst essenziell, die richtige IP-Adresse des UR Netzwerkes einzustellen. 
+		Der UR soll in diesem Fall über das Modbus Protokoll mit dem IO-Link Master kommunizieren.<br>
+		Modbus: Ein Serielles Kommunikationsprotokoll, welches als Methode zur Übertragung von Informationen zwischen  elektronischen Maschinen.<br>
+		Modbus wird durch ein Serielles Kabel zwischen Master und Slave hergestellt. <br>(<a href="http://www.simplymodbus.ca/FAQ.htm">Modbus Erklärung</a>)<br><br>
+		<image src="images/iolink1.png"></image><br>
+		Die Daten werden mittels Einsen und Nullen (Bits) übertragen, welches mit einer positiven und negativen Spannung erreicht wird.<br>
+		Die Geschwindigkeit beträgt 9600 Bits pro Sekunde.<br>
+		Um nun eine Verbindung vom UR zum IO-Link Master herzustellen, wir die voreingestellte IP Adresse des IO-Link Masters 
+		(sollte draufstehen, kann aber auch mit der Turck Software ausgelesen werden, siehe nächsten Schritt) in die Systemeinstellung des URs übernommen.<br><br>
+		Achtung: Die letzten drei Ziffern der IP des Roboters müssen natürlich auf einen anderen Wert abgeändert werden: <br>
+		Beispiel: IP des IO-Links:192.168.3.202 --> IP des Roboters: 192.168.3.XXX  damit sind die Geräte im selben Netzwerk.<br>
+		Subnetzmaske ist nach wie vor die 255.255.255.000
+		<image src="images/iolink2.png"></image><br><br>
+		Um ein neues Gerät mit dem IO-Link zu verbinden und die Konfigurationen anzupassen, empfielt es sich das folgende Video anzuschauen und die genannte 
+		Software zu installieren. (um die gleiche PacTware Version zu haben wie im Video, muss die ältere, also die 4 Version installiert werden!)<br>
+		<center><iframe width="640" height="360" src="https://www.youtube.com/embed/0aY-uEem2Kg" frameborder="0" allow="accelerometer; autoplay; 
+		encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+		<p>Um die IO-Port und verschiedenen Signale und Registerwerte im IO-Link zu überwachen, ist es ohnehin sinnvoll den IO-link mit einem zusätzlichen 
+		Ethernet Anschluss mit dem PC zu verbinden. Wenn man nun im Netzwerk ist (sollte automatisch passieren, wenn man das Ethernet Kabel reinsteckt 
+		und die richtige IP Einstellung wie im Video vorgenommen hat) geht man auf einen seiner Webbrowser und gibt die IP Adresse des IO-Links im 
+		Suchfenster ein und wird auf den Webbrowser des IO-Links weitergeleitet:<br>
+		<image src="images/iolink3.png"></image><br><br>
+		Bei mir ist an Port 3 in diesem Fall ein Zimmer-IO-Greifer angeschlossen, der wie man sieht in seinen Output Registern von Port 3, vom UR Daten 
+		empfängt (über das UR Cap gesteuert). Wichtig ist hierbei an erster Stelle die Überwachung der I/Os, zudem kann über das Fenster Modbus TCP Memory 
+		Map (rot markiert) eingesehen werden, welche Registeradressen man vom UR aus ansteuern muss um die Aus-, oder Eingänge der jeweiligen Ports zu 
+		überschreiben bzw. zu lesen, was bei der Ansteuerung von weitern IO Geräten mit dem UR sehr wichtig ist, da nicht es nicht zu jedem Gerät URCaps 
+		gibt die die ganze Arbeit für einen übernehmen. Beim im Beispiel verwendeten Zimmergreifer, läuft die Steuerung einzig und allein über 8*16Bit 
+		unsigned integers (UINT),jeweils als Outputregister (aus Sicht der Steuerung) und 3*16 Bit UINTs als Inputregister (auch aus Sicht der Steuerung):
+		<image src="images/iolink4.png"></image><br><br>
+		Die Bits werden hierbei in der oben angegebenen Reihenfolge (pro Zykluszeit des Greifers einmal) aktualisiert und gesendet. 
+		<br>--> Der Greifer sendet also die 3 Werte „Status“ , „Diagnosis“ und „ActualPosition“ <br><b>in dieser Reihenfolge</b> an die Inputregister 
+		der jeweiligen Steuerung des jeweiligen Ports und benötigt die anderen Werte „ControlWord“, 
+		um zu entscheiden wie weit er zum Beispiel greifen soll oder wie schnell er fahren muss. Wie die Werte zu wählen sind und wie 
+		der Handshake vor jeder Datenübermittlung funktioniert ist im Handbuch des Zimmergreifers genau erklärt.
+		<image src="images/iolink5.png"></image><br><br>
+		Um nun etwa den ersten Output des 3. Ports (in Falle des Zimmer Greifers dann das „ControlWord“), mit dem UR anzusteuern, 
+		muss die Adresse 2081 verwendet werden. Um eine Modbus Verbindung aufzubauen, kann beim UR der „Installationsreiter“ <br>--> „Feldbus“
+		<br>--> „Modbus“ ausgewählt werden. <br>
+		<image src="images/iolink6.png"></image><br><br>
+		Mit den eingerichteten Signalen kann dann im code weitergearbeitet werden. Im UR Skript manuell stehen zudem zahlreiche weitere 
+		Funktionen zur Verfügung um mit Modbus Registern und Input/Outputs gearbeitet werden kann:</p><br>
+		<image src="images/iolink7.png" width="450"></image></p>
+        </br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
+	
 	
 	<div id="chapter_28" class="jumbotron chapter_28" hidden>
         <h1>Dual-Kalibrierung</h1>
@@ -1154,8 +1169,7 @@
 		wird.
 		<b>Position</b> zum Ändern der Lage des Werkzeugs relativ zum Werkzeugflansch des Roboters. Die
 		Position wird bei den Sicherheitsfunktionen Werkzeuggeschwindigkeit, Werkzeugmoment,
-		Nachlaufweg und Sicherheitsebenen berücksichtigt.
-		<br></p>
+		Nachlaufweg und Sicherheitsebenen berücksichtigt.<br></p>
 		<h2>Werkzeugrichtung</h2>
 		<p>Der Bildschirm Werkzeugrichtung kann verwendet werden, um den Winkel zu begrenzen, in dessen Richtung das Werkzeug zeigt. Die Begrenzung wird durch einen Konus definiert, der relativ
 		zur Roboterarm-Basis eine fixe Orientierung aufweist. Bei den Bewegungsabläufen des Roboterarms wird die Richtung des Werkzeugs eingeschränkt, damit es den definierten konischen Bereich nicht überschreitet. Die Standardrichtung des Werkzeugs liegt auf der Z-Achse des WerkzeugAusgangsflanschs. Durch Angabe von Neige- und Schwenkwinkeln kann diese geändert werden.
@@ -1246,6 +1260,65 @@
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>	
+	
+	<div id="chapter_34" class="jumbotron chapter_34" hidden>
+        <h1>URCap schreiben</h1>
+        <p>URCaps kann man selber auf Linux/Ubuntu programmieren. Auf dieser Plattform gibt es die Möglichkeit, die Simulation von Polyscope laufen zu lassen.<br>
+		Der eigentliche Java-Anteil wird innerhalb der Eclipse IDE programmiert (von UR vorgeschlagen).<br>
+		Am besten und einfachsten ist, das vorgefertigte Virtual-Machine-Image von Universal-Robot runter zu laden, denn dort ist alles schon vorgefertigt, um sofort zu programmieren.<br><br>
+		
+		Projekt erstellen:<br>
+		
+		
+		In Eclipse einfügen:<br>
+		
+		
+		Benötigte Klassen:<br>
+		Activator: Automatisch vorhanden.<br>
+		<img src="images/URcap1.png" width="450" ></img><br>
+		NodeService: Muss erstellt werden.<br>
+		<img src="images/URcap2.png" width="450"></img><br>
+		NodeView:<br>
+		
+		NodeContribution:<br>
+		
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>	
+	
+	
+		<!-- <div id="chapter_27" class="jumbotron chapter_27" hidden>  Andere kommunikationsteile 
+        <h1>Kommunikationsprotokolle</h1>
+        <p>Zur Kommunikation zwischen dem Roboter und dem jeweiligen Gerät, gibt es einige Verbindungsarten. 
+		Die meist angewendeten sind IO-Link, Socket-Connection per Skript, IP und URCaps. 
+		Ein Teilnehmer übernimmt meist die Server-Rolle, da Peer-to-Peer nicht wirklich in der 
+		Industrieumgebung benutzt wird. <br>Im Folgenden werden Möglichkeiten der Kommunikation gezeigt.<br><br>
+		<b>1. Socket-Connection per Skript-Baustein:</b><br>
+		Hier werden Ports auf dem Robotercontroller für "in" und "out" geöffnet. Darüber sendet man dann
+		ein Triggersignal an das gewünschte Gerät. Dies sollte dann den Befehl ausführen und eine Bestätigung zurücksenden,
+		ob es funktioniert hat oder einen Fehler geworfen hat.<br>
+		Auf diese Art wird der Roboter zum "Server".<br>
+		Auf dem Roboter wird hierfür ein Skript-Baustein benutzt mit folgenden Zeilen:<br>
+		<code>socket_1 = socket_open(IP, PORT, socketname = s_out)<br>
+		socket_2 = socket_open(IP, PORT, socketname = s_in)<br>
+		socket_send_string ("TRG", socketname = s_out)<br>
+		…<br>socket_close (socketname = s_in)<br>socket_close (socketname = s_out)</code><br>
+		<br><b>2. Ethernet/IP:</b><br>
+		<img src="images/EthernetIP.png" width="750px" height="450px"></img><br>
+		<br><b>3. URCaps:</b><br>
+		Viele Geräte haben ein eigenes URCap, welches die komplette Bedienung erleichtert. 
+		Darin ist die nötige Programmierung, welche mit einer einfachen Bedienoberfläche zurechtgelegt ist.
+		Wenn ein URCaps vorliegt, unbedingt für einen reibungslosen Aufbau und Anschluss benutzen.<br>
+		<br><b>6. Profinet:</b><br>
+		<img src="images/Profinet.png" width="750px" height="450px"></img><br>
+		</p>
+        </br></br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div> -->
+	
 	
     <div id="over" class="jumbotron quiz_end" hidden>
         <h1>Das Quiz ist vorbei.</h1>
