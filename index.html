@@ -60,12 +60,12 @@
 			</div>
 			<div class="row">
 			<div class="col-md-4"><p><button class="chapter21_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Bin-Picking</button></p></div>
+			<div class="col-md-4"><p><button class="chapter15_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">URCaps</button></p></div>
 			</div>
 			
 			<hr></hr>
 			<h2>Experte:</h2>
 			<div class="row">
-				<div class="col-md-4"><p><button class="chapter15_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">URCaps*</button></p></div>
 				<div class="col-md-4"><p><button class="chapter7_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kamera-Kalibrierung*</button></p></div>
 				<div class="col-md-4"><p><button class="chapter27_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Kommunikationsprotokolle*</button></p></div>
 			</div>
@@ -173,7 +173,7 @@
 		• drei rotatorische Achsen A, B und C.<br><br>
 		<img src="images/koordsys.jpg" height="400">
 		</p>
-		<!--<p>Drehen Sie immer in der Reihenfolge: 1, 2 und dann 3.<br>
+		<!--<p>Drehen Sie immer in der Reihenfolge: 1, 2 und 3.<br>
 		Mittels 4(x), 5(y) und 6(z) verschieben Sie den Ursprung global im Raum.<br>
 		Nach Verschieben/Verdrehen des Koordinatensystems, entfernen Sie den Haken bei "kos", um das Kardan-System einzublenden.<br><br>
 		Hier wird um die jeweilige Achse rotiert.</p>
@@ -185,16 +185,19 @@
 	</div>
 
 	<div id="chapter_4" class="jumbotron chapter_4" hidden>
-        <h2>TCP</h2>
-        <p>Der TCP (tool center point) stellt den vordersten Punkt des Roboterarms, den Flansch, dar.
+		<h2>TCP</h2>
+		<p>Der TCP (tool center point) stellt den vordersten Punkt des Roboterarms, den Flansch, dar.
           Wenn ein Effektor montiert ist, muss der TCP anhand dessen kalibriert werden.
-		  Der TCP ist der Hauptreferenzpunkt des Roboters und anhand dessen, werden z.b. Wegpunkte gespeichert.<br>
-		  <img src="images/tcp1.png"></img><br><br>
+		  Der TCP ist der Hauptreferenzpunkt des Roboters und anhand dessen, werden z.b. Wegpunkte gespeichert.<br></p>
+		  <img src="images/tcp1.png" width="600"></img><br><br>
 		<h2>Ebenen</h2>
 		 <p>Wegpunkte die man festlegt, können in Relation zu einer Ebene angefahren werden.
 		 Diese sollten sich alle auf der Ebene befinden. Wenn der Ursprung der Ebene versetzt wird,
 		 so wandern die Wegpunkte mit. Dies sollte man im Kopf haben, dass alle Punkte weiterhin in der Reichweite
-		 des Roboters sind. </p>
+		 des Roboters sind.<br>
+		 <image src="images/ebene11.png" width="600"></image></p>
+		 <p><b>Für jeden Fahrbefehl kann man einen TCP und eine Ebene speziell auswählen. Bei Missachtung oder falscher Einstellung, kann es zur Kollision kommen.</b></p><br>
+		 <img src="images/fahrbefehl.png"></img>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -268,9 +271,13 @@
 		Wenn die Kamera ein Objekt erkennt und dessen Koordinaten hat, werden diese in die Koordinaten des Roboters umgerechnet und der TCP kann sich durch einen Fahrbefehl dort hinbewegen.<br>
 		Weitere Themen der Kameratechnik werden schnell sehr komplex.</p>
 		<h2>Keyence</h2>
+		
 		<h2>Baumer</h2>
+		
 		<h2>Cognex</h2>
+		
 		<h2>SensoPart</h2>
+		
 		</br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -313,6 +320,7 @@
 		Man beachte, dass diese Gesetze hierarchisch aufgebaut sind. Sie bilden den Hintergrund, in einem Science-Fiction-Film von 1950
 		und prägen seither die Auffassung, was und wie ein Roboter sein sollte. 
 		Die von Asimov beschriebenen Roboter sind in ihrem Verhalten und ihren Entscheidungen an diese Gesetze gebunden.<br><br>
+		<center><img src="images/asimov.jpg"></img></center><br>
 		Roboter im militärischen Bereich (automatische Waffensysteme, Smart Bombs, Drohnen, Kampfroboter) sind davon ausgenommen., da sie einen anderen
 		Zweck verfolgen.</p>
         </br></br><hr></hr>
@@ -326,13 +334,13 @@
 		was für eine Gefährdung von dem Roboter während seiner Bewegungen ausgeht.<br>
 		Dies passiert mittels Kraftmessdosen, auf die der Roboter eine Kollision fährt.<br>
 		Diese Dosen gibt es in verschiedenen Ausführungen. <br>Hier z.B. zu sehen von GTE Cobosafe.<br>
-		<img src="images/druck4.png" width="650"></img><br><br>
+		<img src="images/druck4.png" width="400"></img><br><br>
 		Das Kraft-/Druckprofil, welches von der Dose aufgenommen wird, wird in einem Graphen festgehalten.<br>
 		Die Auswertung passiert in der Cobosafe Software.<br>
-		<img src="images/druck3.png"></img><br>
+		<img src="images/druck3.png" width="400"></img><br>
 		<br>Von Normen festgelegt, gibt es eine Tabelle, die die erlaubten Kräfte auflistet. Das ist für jeden Bereich des menschlichen
 		Körpers unterschiedlich.<br>
-		<img src="images/druck1.png"></img><br>
+		<img src="images/druck1.png" width="750"></img><br>
 		<img src="images/druck2.png"></img><br></p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -435,6 +443,7 @@
 		<br><image src="images/flansch5.png"></image><br><br>		
 		Die mögliche Nutzlast der UR unterscheidet sich zwischen den verschiedenen Serien.<br>
 		Diese sollte nicht überschritten werden und kann ab einer gewissen Kragarmlänge auch variieren.<br>
+		UR3e - 3kg<br>
 		UR5e - 5kg<br>
 		UR10e - 10kg<br>
 		UR16e - 16kg<br></p>
@@ -448,8 +457,9 @@
         <p>URCaps sind wohl das stärkste Werkzeug der Universal Robots.
 		In einem URCap kann man alles programmieren, das man sich ausdenken kann. Dieses komplexe Tool bietet unendlich viele Möglichkeiten, 
 		Probleme zu vereinfachen oder sogar Bedienoberflächen für Geräte herzustellen.<br><br>
-		Universal Robots stellt kostenlos ein VirtualMachine-Image, mit einem LinuxOS, zur Verfügung, in dem eine IDE und die nötige SDK schon installiert sind.<br>
-		Man kann sofort anfangen zu coden, so weit man weiß, was man machen muss.</p>
+		Viele Hersteller liefern ein URCap mit ihrem Produkt mit (Kamera,Greifer,..) um die Einrichtung und Bedienung zu erleichtern.<br>
+		Das URCap läd man auf einen USB-Stick, steckt diesen an das Teach-Pendant an und installiert es in den Robotereinstellungen.<br></p>
+		<img src="images/urcaps1.png" width="600"></img>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -589,7 +599,7 @@
 	
 	<div id="chapter_18" class="jumbotron chapter_18" hidden>
         <h1>Ersatzteile</h1>
-        <p> Ersatzteile werden bei folgender Adresse bestellt:<br>
+        <p> Ersatzteile werden bei folgender Adresse bestellt:<br><br>
 		Jugard + Küstner GmbH<br>
 		Weidentalstraße 45<br>
 		90518 Altdorf bei Nürnberg<br>
@@ -597,7 +607,7 @@
 		Mail: nbg@jugard-kuenstner.de<br><br>
 		Teilenummer der nötigen Teile ablesen.<br>
 		Sicher gehen, dass man die richtigen Teilenummern ausgelesen hat, von allen Teilen, die man braucht.<br>
-		Die Menge der jeweiligen Teile abklären.<br>
+		Die Menge der jeweiligen Teile mit zuständiger Person abklären.<br>
 		Per Teilenummer und mit der jeweiligen Menge die Bestellung aufgeben.<br><br>
 		Den Katalog als Anhaltspunkt benutzen!</p>
 		<object width="750px" height="800px" data="doc/ServiceManual_EN.pdf"></object>
@@ -748,47 +758,51 @@
 		Es muss eine Kiste mit den gewünschten Teilen unterhalb der Kamera aufgestellt werden und den 
 		Bereich so einstellen, dass nur die Kiste abgedeckt wird.
 		<img src="images/binpick2.png"></img><br>
-		Im nächsten Schritt wird der Roboter verbunden. <br>Im Reiter Roboter verbinden wird der gewünschte Roboter ausgewählt. Um eine Verbindung herstellen zu können müssen folgende Einstellungen am Roboter verändert werden:<br>
-		1. Setzten Sie unter Roboter Einstellung der IP-Adresse auf Statische Adresse. Geben sie eine neue IP-Adresse 198.168.0.1 ein.<br>
-		2. Laden Sie das neueste Programm KeyenceRobotVisionSetup.urp auf den Roboter. Diese erhalten Sie von Keyence.<br>
-		3. Nun geben Sie in dem Skriptcode die Adresse des 3d Vision 198.168.0.10 ein.
+		Im nächsten Schritt wird der Roboter verbunden. <br>Im Reiter "Roboter verbinden" wird der gewünschte Roboter ausgewählt. 
+		Um eine Verbindung herstellen zu können, müssen folgende Einstellungen am Roboter verändert werden:<br>
+		1. Setzten Sie unter "Roboter Einstellung" die IP-Adresse auf Statische Adresse. Geben sie eine neue IP-Adresse 198.168.0.1 ein.<br>
+		2. Laden Sie das neueste Programm KeyenceRobotVisionSetup.urp auf den Roboter. Dieses erhalten Sie von der Keyence-Website.<br>
+		3. Nun geben Sie in dem Skriptcode die IP-Adresse des 3d Vision 198.168.0.10 ein.
 		CUR_SetupCamera(“Cam1”,”192.168.0.10”,8500)<br>
 		4. Führen sie Nun das Programm am Roboter aus.<br>
 		<img src="images/binpick3.png"></img><br>
-		Jetzt kann die Roboterverbindung getestet werden. <br>Zum Schluss werden die Robotermodel Daten 
+		Jetzt kann die Roboterverbindung getestet werden. <br>Zum Schluss werden die Robotermodel-Daten 
 		noch hochgeladen. Diese erhalten Sie ebenfalls von Keyence. <br><br>
-		Im nächsten Reiter Kalibrierung muss der Roboter mit der Kamera kalibriert werden. 
-		Hierzu auf hinzufügen klicken um eine neue Kalibrierung zu erstellen und es erscheint wie auf dem Bild. 
+		Im nächsten Reiter "Kalibrierung" muss der Roboter mit der Kamera kalibriert werden. 
+		Dafür auf "hinzufügen" klicken um eine neue Kalibrierung zu erstellen und es erscheint wie auf dem Bild. 
 		<br><img src="images/binpick4.png"></img><br>
 		Nun muss das Kalibrierobjekt am Roboter angebracht werden. 
-		Anschließen die Hand des Roboters in die Mitte des Kamerasichtfeldes fahren und 
-		die Koordinaten Registrieren. <br>Im nächsten Schritt Erkennung Werkzeugeinst. 
-		Wird ein Referenzbild vom Kalibierobjekt erstellt. <br>Im Schritt Kalibrierung werden 
+		Anschließend die Hand des Roboters in die Mitte des Kamerasichtfeldes fahren und 
+		die Koordinaten registrieren. <br>Im nächsten Schritt "Erkennung Werkzeugeinst.", 
+		wird ein Referenzbild vom Kalibierobjekt erstellt. <br>Unter "Kalibrierung" werden 
 		die Abstände der Referenzpunkte eingestellt. Dabei ist zu beachten, dass diese möglichst 
-		weit auseinander liegen. <br>Nun auf Ausführen klicken und der Roboter fährt automatisch die 
-		Referenzpunkte ab. <br>Im Schritt Berechnung Werkzeugmitte werden statt Punkte Gradzahlen eingegeben. 
-		Auch hier wieder auf Ausführen Klicken und der Roboter fährt automatisch die Punkte ab.<br>
+		weit auseinander liegen. <br>Nun auf "Ausführen" klicken und der Roboter fährt automatisch die 
+		Referenzpunkte ab. <br>Im Schritt "Berechnung Werkzeugmitte" werden statt Punkte, Gradzahlen eingegeben. 
+		Auch hier wieder auf "Ausführen" klicken und der Roboter fährt automatisch die Punkte ab.<br>
 		<img src="images/binpick5.png"></img><br><br>
-		Im Reiter 3D Suche wird das Suchmodel und die Kiste registriert. <br><br>
-		Im 1. Schritt Modell registrieren ein Referenzmodel erstellt. Hier können die CAD-Daten hochgeladen oder ein Bild von dem Model aufgenommen werden. Einfach Hinzufügen klicken und die gewünschte Methode auswählen. <br>Soll ein Bild aufgenommen werden, einfach das Model auf eine ebene Platte legen und ein Bild aufnehmen. <br>Die Einstellungen müssen so sein, dass nur noch das Model zusehen ist.
+		Im Reiter "3D Suche" wird das Suchmodel und die Kiste registriert. <br><br>
+		Im 1. Schritt "Modell registrieren" wird ein Referenzmodel erstellt. Hier können die CAD-Daten hochgeladen oder ein Bild von dem Model aufgenommen werden. 
+		Einfach "Hinzufügen" klicken und die gewünschte Methode auswählen. <br>Soll ein Bild aufgenommen werden, muss das Model auf eine ebene Platte legen und ein Bild aufgenommen werden. 
+		<br>Die Einstellungen müssen so sein, dass nur noch das Model zusehen ist.
 		<br><img src="images/binpick6.png"></img><br>
-		Im 2. Schritt Kiste definieren wird die Kiste eingestellt. Dazu auf bearbeiten klicken und ein Bild der Leeren Kiste aufnehmen. Nun werden die Kanten der Kiste definiert. Dazu jeweils 2 Punkte an den Kanten oben, rechts, unten und links angeben. <br>
-		<br>Im 3. Schritt Sucheinstellungen, wie im Bild rechts, muss die Min. Übereinstimmung unter dem Schwankungsbereich der Übereinstimmung liegen. Ist der Wert zu hoch werden keine Teile erkannt. <br>Anschließend auf die 2 Pfeile nach rechts klicken. In der Erkennungsreihenfolge 
+		Im 2. Schritt "Kiste definieren" wird die Kiste eingestellt. Dazu auf "Bearbeiten" klicken und ein Bild der leeren Kiste aufnehmen. 
+		Nun werden die Kanten der Kiste definiert.<br> Dazu jeweils 2 Punkte an den Kanten oben, rechts, unten und links angeben. <br>
+		<br>Im 3. Schritt "Sucheinstellungen", wie im Bild zusehen, muss die Min. Übereinstimmung unter dem Schwankungsbereich der Übereinstimmung liegen. 
+		Ist der Wert zu hoch, werden keine Teile erkannt. <br>Anschließend auf die 2 Pfeile nach rechts klicken. In der Erkennungsreihenfolge 
 		Z> Überein.%: absteigend einstellen. Dadurch werden immer die obersten Teile genommen.<br>
 		<img src="images/binpick7.png"></img><br><br>
-		Im Reiter Bahnplanung werden alle Einstellungen rund um des Greifen und Ablegen des Models definiert. <br>
-		Im 1. Schritt Arbeitsbereich das Werkstück Modell erstellt. Durch auswählen des Bausteins 3D Suche, Werkstückmodell erstellen und anschließend Modell generieren wird aus dem Referenzbild ein 3D Referenzmodell. <br>Danach werden die Kalibrierungsdaten geladen. Hier die zuvor abgespeicherte Kalibrierung verwenden. <br>Anschließend noch den Greifermodell erstellen. Hierzu werden die CAD-Daten des Greifers hochgeladen und die Backen selbst modelliert. Hier ist zu beachten den Werkzeugmittelpunkt, also den Tool Center Point in die Mitter der Backen zu setzten. Nach der Greifererstellung können noch mögliche Layout Daten erstellt werden, wie z.b. Wände oder Zäune der Roboteranlage.<br>
-		Im 2. Schritt Greiferpositionen registrieren wird, wie links im Bild, das Greifermodell so positioniert, wie er in Real das Bauteil greifen würde. Hier ist zu beachten, dass der Greifer nicht mit dem Modell kollidiert.
+		Im Reiter "Bahnplanung" werden alle Einstellungen rund um das Greifen und Ablegen des Models definiert. <br>
+		Im 1. Schritt Arbeitsbereich das Werkstück Modell erstellt. Durch Auswählen der Bausteine "3D Suche", "Werkstückmodell erstellen" und anschließend "Modell generieren", wird aus dem Referenzbild ein 3D Referenzmodell. <br>Danach werden die Kalibrierungsdaten geladen. Hier die zuvor abgespeicherte Kalibrierung verwenden. <br>Anschließend noch den Greifermodell erstellen. Hierzu werden die CAD-Daten des Greifers hochgeladen und die Backen selbst modelliert. Hier ist zu beachten den Werkzeugmittelpunkt, also den Tool Center Point in die Mitter der Backen zu setzten. Nach der Greifererstellung können noch mögliche Layout Daten erstellt werden, wie z.b. Wände oder Zäune der Roboteranlage.<br>
+		Im 2. Schritt "Greiferpositionen registrieren" wird das Greifermodell so positioniert, wie der Greifer in Real das Bauteil greifen würde. Hier ist zu beachten, dass der Greifer nicht mit dem Modell kollidiert.<br>
 		<img src="images/binpick8.png"></img><br>
-		Im 3. Schritt Roboterbahneinstellungen müssen nur noch die Startposition, die Position über der Kiste und die Ablageposition definiert werden.<br>
+		Im 3. Schritt "Roboterbahneinstellungen" müssen nur noch die Startposition, die Position über der Kiste und die Ablageposition definiert werden.<br>
 		<img src="images/binpick9.png"></img><br>
-		Im 4. Schritt Überprüfung wird die Maximale Werkstücküberlappung und den Kollisionspuffer mit der Kiste eingegeben. <br><br>
-		Nun ist das Programm fertig und kann ausprobiert werden. Dazu lädt man das 
+		Im 4. Schritt "Überprüfung" wird die Maximale Werkstücküberlappung und den Kollisionspuffer mit der Kiste eingegeben. <br><br>
+		Nun ist das Programm fertig und kann ausprobiert werden. Hierzu lädt man das 
 		OperationProgrammpp.urp auf den Roboter. Diese erhält man ebenfalls von Keyence. 
-		Hier müssen dann noch die Greiferbewegungen auf bzw. zu eingefügt werden. 
-		Anschließend im 3D Robot Vision auf Run drücken und im Roboter Programm auf ausführen.<br>
-		Nun bewegt sich der Roboter automatisch und nimmt ein Bauteil aus der Kiste.
-		</p>
+		Hier müssen dann noch die "Greiferbewegungen auf" bzw. "zu" eingefügt werden. 
+		Anschließend im 3D Robot Vision auf "Run" drücken und im Roboter Programm auf "Ausführen".<br>
+		Nun bewegt sich der Roboter automatisch und nimmt ein Bauteil aus der Kiste.</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
