@@ -23,7 +23,7 @@
 			</div>
 		</nav>
 
-    <!--chapter_33 ist das aktuellste :: URCap schreiben 34; -->
+    <!--chapter_35 ist das aktuellste -->
 	<div id="start_screen" class="jumbotron start_screen">
 			<h1>Willkommen zur ZF-Robotik</h1>
 			<p>Bitte vorher die Schulung auf der Universal-Robot Webseite machen.<br></p>
@@ -61,6 +61,7 @@
 			<div class="row">
 			<div class="col-md-4"><p><button class="chapter21_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Bin-Picking</button></p></div>
 			<div class="col-md-4"><p><button class="chapter15_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">URCaps</button></p></div>
+			<div class="col-md-4"><p><button class="chapter35_btn btn btn-primary btn-lg" style="margin:2px;height:45px;width:250px" role="button">Palettierung</button></p></div>
 			</div>
 			
 			<hr></hr>
@@ -129,7 +130,7 @@
         </div>
     </div>
 
-	  <div id="chapter_1" class="jumbotron chapter_1" hidden>
+	<div id="chapter_1" class="jumbotron chapter_1" hidden>
         <h2>Rotationsmatrix</h2>
 		<p>Die Rotation eines Körpers im Raum ist ein essentielles Thema für Ingenieure in jeglichen 
 		Bereichen. Auch auf Enzyklopedien gibt es einiges über dieses Thema heraus zu finden 
@@ -445,7 +446,7 @@
 		UR3e - 3kg<br>
 		UR5e - 5kg<br>
 		UR10e - 10kg<br>
-		UR16e - 16kg<br></p>
+		UR16e - 16kg</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
@@ -992,7 +993,6 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
 	
-	
 	<div id="chapter_28" class="jumbotron chapter_28" hidden>
         <h1>Dual-Kalibrierung</h1>
 		<p>Dieses Vorgehen benötigt zwei Roboter der gleichen Machart und das Kalibrierungstool von Universal Robot.
@@ -1084,7 +1084,7 @@
 		Die Kalibrierungsdatei kann man hier finden: /root/.urcontrol/calibration.conf.<br>
 		Hier sind auch viele andere Konfigurationen zu finden. Bevor man in diesen Dateien etwas ändert, immer eine Kopie des Backups behalten. <br>
 		Um die Kalibrierung zurückzusetzen, setzt man alle delta-Arrays auf Null, wie im Bild zu sehen.<br>
-		 <img src="images/kali21.png"></img>
+		<img src="images/kali21.png"></img>
 		</p>
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
@@ -1138,15 +1138,15 @@
 		</p><img src="images/limit3.png"></img>
 		<h2>Sicherheitsebenen</h2>
 		<p>Die Ebenen, die man selbst festlegen kann, können auf viele Weisen benutzt werden.
-		  Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
-		  Sicherheitsebenen stellen eine 'Barriere' dar, die der Roboter nicht durchstoßen soll. Dies kann man auf einige Arten festlegen.<br>
-		  • "Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
-		  • "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
-		  • "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
-		  • "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br>
-		  <img src="images/ebenen.png"  width="600"></img><br>
-		  <b>Sicherheitsebene konfigurieren:</b><br>
-		  1. Klicken Sie in der PolyScope Kopfzeile auf Installation.<br>
+		Sie können benutzt werden, um Wegpunkte im Bezug auf die Ebene festzulegen, aber auch als Sicherheitsebenen.
+		Sicherheitsebenen stellen eine 'Barriere' dar, die der Roboter nicht durchstoßen soll. Dies kann man auf einige Arten festlegen.<br>
+		• "Normal" → kein Durchgang des TCP/Ellbogen möglich im normalen Betrieb<br>
+		• "Reduziert" → kein Durchgang des TCP/Ellbogen möglich im reduzierten Betrieb<br>
+		• "Beides" → kein Durchgang des TCP/Ellbogen möglich<br>
+		• "Auslöser Reduzierter Modus" → beim Durchgang der Ebene wird in den Reduzierten Modus umgeschaltet<br>
+		<img src="images/ebenen.png"  width="600"></img><br>
+		<b>Sicherheitsebene konfigurieren:</b><br>
+		1. Klicken Sie in der PolyScope Kopfzeile auf Installation.<br>
 		2. Klicken Sie im Seitenmenü links im Bildschirm auf Sicherheit und wählen Sie Ebenen.<br>
 		3. Klicken oben rechts im Feld Ebenen auf Ebene hinzufügen.<br>
 		4. Legen Sie unten rechts im Feld Eigenschaften einen Namen, die Kopierfunktion und Einschränkungen fest.<br><br>
@@ -1171,9 +1171,9 @@
 		Position wird bei den Sicherheitsfunktionen Werkzeuggeschwindigkeit, Werkzeugmoment,
 		Nachlaufweg und Sicherheitsebenen berücksichtigt.<br></p>
 		<h2>Werkzeugrichtung</h2>
-		<p>Der Bildschirm Werkzeugrichtung kann verwendet werden, um den Winkel zu begrenzen, in dessen Richtung das Werkzeug zeigt. Die Begrenzung wird durch einen Konus definiert, der relativ
+		<p>Der Bildschirm <b>Werkzeugrichtung</b> kann verwendet werden, um den Winkel zu begrenzen, in dessen Richtung das Werkzeug zeigt. Die Begrenzung wird durch einen Konus definiert, der relativ
 		zur Roboterarm-Basis eine fixe Orientierung aufweist. Bei den Bewegungsabläufen des Roboterarms wird die Richtung des Werkzeugs eingeschränkt, damit es den definierten konischen Bereich nicht überschreitet. Die Standardrichtung des Werkzeugs liegt auf der Z-Achse des WerkzeugAusgangsflanschs. Durch Angabe von Neige- und Schwenkwinkeln kann diese geändert werden.
-		Vor dem Konfigurieren der Begrenzung müssen Sie einen Punkt oder eine Ebene in der Roboterinstallation definieren (siehe 16.3). Die Funktion kann anschließend kopiert und ihre Z-Achse als Mitte des Begrenzungskonus verwendet werden.<br>
+		Vor dem Konfigurieren der Begrenzung müssen Sie einen Punkt oder eine Ebene in der Roboterinstallation definieren. Die Funktion kann anschließend kopiert und ihre Z-Achse als Mitte des Begrenzungskonus verwendet werden.<br>
 		<br><img src="images/werkzeug2.png"></img><br>
 		Die Begrenzung der Werkzeugrichtung besitzt drei konfigurierbare Eigenschaften:<br>
 		<br>1. <b>Konusmitte:</b> Zur Definition der Konusmitte können Sie im Dropdown-Menü eine Punkt- oder
@@ -1248,7 +1248,6 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>
 	
-	
 	<div id="chapter_33" class="jumbotron chapter_33" hidden>
         <h1>CE-Kennzeichnung:</h1>
         <p>Bevor ein Roboter in der Industrieumgebung in Betrieb genommen werden darf, muss erst die 
@@ -1259,21 +1258,23 @@
         </br></br><hr></hr>
         <p>Für den Startbildschirm, bitte Klicken.</p>
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
-	</div>	
+	</div>
 	
 	<div id="chapter_34" class="jumbotron chapter_34" hidden>
         <h1>URCap schreiben</h1>
         <p>URCaps kann man selber auf Linux/Ubuntu programmieren. Auf dieser Plattform gibt es die Möglichkeit, die Simulation von Polyscope laufen zu lassen.<br>
 		Der eigentliche Java-Anteil wird innerhalb der Eclipse IDE programmiert (von UR vorgeschlagen).<br>
 		Am besten und einfachsten ist, das vorgefertigte Virtual-Machine-Image von Universal-Robot runter zu laden, denn dort ist alles schon vorgefertigt, um sofort zu programmieren.<br><br>
-		
-		Projekt erstellen:<br>
-		
-		
-		In Eclipse einfügen:<br>
-		
-		
-		Benötigte Klassen:<br>
+		<b>Neues Projekt erstellen:</b><br>
+		Innerhalb des Ubuntu Betriebsystems, den Terminal öffnen und folgende Schritte, wie auf den Bildern abarbeiten.<br>
+		<image src="images/newproject1.png" width="300"></image><br><br>
+		<image src="images/newproject2.png" width="300"></image><br><br>
+		<image src="images/newproject3.png" width="300"></image><br><br>
+		Dies erstellt eine Datei in SDK-Ordner. Diesen Ordner in den Workspace ablegen, für einfaches wiederfinden.<br><br>		
+		<b>In Eclipse einfügen:</b><br>
+		Durch die Importfunktion das neue Projekt, welches im Workspace ist, in Eclipse importieren.<br>
+		<image src="images/import1.png" width="300"></image><br><br>
+		<b>Benötigte Daten:</b><br>
 		Activator: Automatisch vorhanden.<br>
 		<img src="images/URcap1.png" width="450" ></img><br>
 		NodeService: Muss erstellt werden.<br>
@@ -1288,8 +1289,7 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div>	
 	
-	
-		<!-- <div id="chapter_27" class="jumbotron chapter_27" hidden>  Andere kommunikationsteile 
+	<!-- <div id="chapter_27" class="jumbotron chapter_27" hidden>  Andere kommunikationsteile 
         <h1>Kommunikationsprotokolle</h1>
         <p>Zur Kommunikation zwischen dem Roboter und dem jeweiligen Gerät, gibt es einige Verbindungsarten. 
 		Die meist angewendeten sind IO-Link, Socket-Connection per Skript, IP und URCaps. 
@@ -1319,6 +1319,33 @@
         <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
 	</div> -->
 	
+	<div id="chapter_35" class="jumbotron chapter_35" hidden>
+        <h1>Palletierung</h1>
+        <p>Palletierung ist eine Aufgabe, die ein Roboter sehr gut abarbeiten kann. Universal Robot hat eine vorgefertigte Palletierungsfunktion als fertigen Baustein, welchen man nur noch
+		parametrieren und Wegpunkte festlegen muss.<br>
+		Jeder Schritt ist sehr gut beschrieben und sollten nacheinander befolgt werden.<br><br>
+		<img src="images/pallet1.png" width="500"></img><br>
+		<img src="images/pallet2.png" width="500"></img><br>
+		<img src="images/pallet3.png" width="500"></img><br>
+		<img src="images/pallet4.png" width="500"></img><br><br>
+		Es gibt noch die Möglichkeit eine eigene Palletierungstemplate zu schreiben, welche sogar ein ungleichmäßiges Muster haben kann.<br>
+		Bei den Wegpunkten jederzeit darauf achten, dass der richtige TCP und die richtige Ebene benutzt werden.<br> 
+		Der Programmbaum zum Anfahren der Punkte wäre zum Beispiel wie folgt:<br></p>
+		<p><code>FahrAchse<br>
+		--Wegpunkt Start<br>
+		endpoint = get_actual_tcp_pose()<br>
+		Schleife X mal (lange Seite)<br>
+		--Schleife X mal (kurze Seite)<br>
+		----FahreAchse<br>
+		------endpoint<br>
+	    ----Greifen<br>
+	    ----endpoint[0] = endpoint[0] + offset_X<br>
+		----endpoint[1] = endpoint[1] + offset_Y<br>
+		</code></p>
+        </br><hr></hr>
+        <p>Für den Startbildschirm, bitte Klicken.</p>
+        <p><button class="restartchapter btn btn-primary btn-lg" role="button">Startbildschirm</button></p>
+	</div>	
 	
     <div id="over" class="jumbotron quiz_end" hidden>
         <h1>Das Quiz ist vorbei.</h1>
@@ -1328,7 +1355,7 @@
   </div>
 
   <center>
-  <img src="images/robot.png" width=“260“ height=“260“ alt="robot"></img>
+  <img src="images/robot.png" width=“260“ alt="robot"></img>
   </center>
 
    	<!-- jQuery ein muss für bootstrapper java zeug -->
